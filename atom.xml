@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>&lt;FED&gt;ZhuTao&#39;s Blog</title>
+  
+  <subtitle>经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="1824437.github.io/"/>
+  <updated>2019-10-27T01:20:55.982Z</updated>
+  <id>1824437.github.io/</id>
+  
+  <author>
+    <name>ZhuTao&lt;zhutao@live.cn&gt;</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>typescript声明文件的作用</title>
+    <link href="1824437.github.io/web/typescript%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%9C%E7%94%A8/"/>
+    <id>1824437.github.io/web/typescript描述文件的作用/</id>
+    <published>2019-10-27T01:17:32.996Z</published>
+    <updated>2019-10-27T01:20:55.982Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="first"><a href="#first" class="headerlink" title="first"></a>first</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;first&quot;&gt;&lt;a href=&quot;#first&quot; class=&quot;headerlink&quot; title=&quot;first&quot;&gt;&lt;/a&gt;first&lt;/h2&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="1824437.github.io/categories/web/"/>
+    
+    
+      <category term="Typescript 声明文件" scheme="1824437.github.io/tags/Typescript-%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+</feed>
