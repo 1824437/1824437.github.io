@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-10-27T08:09:53.930Z</updated>
+  <updated>2019-10-27T10:48:15.820Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css3</title>
+    <link href="1824437.github.io/web/css3/css3/"/>
+    <id>1824437.github.io/web/css3/css3/</id>
+    <published>2019-10-27T10:47:26.133Z</published>
+    <updated>2019-10-27T10:48:15.820Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="容器与项目（容器成员）"><a href="#容器与项目（容器成员）" class="headerlink" title="容器与项目（容器成员）"></a>容器与项目（容器成员）</h2><h3 id="flex-容器"><a href="#flex-容器" class="headerlink" title="flex 容器"></a>flex 容器</h3><p>设置为flex容器： <code>display:flex;</code></p><p><strong>属性</strong></p><ol><li>flex-direction</li><li>flex-warp</li><li>flex-flow</li><li>justify-content</li><li>align-items</li><li>align-content</li></ol><h3 id="flex容器内的元素则为flex项目。"><a href="#flex容器内的元素则为flex项目。" class="headerlink" title="flex容器内的元素则为flex项目。"></a>flex容器内的元素则为flex项目。</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;容器与项目（容器成员）&quot;&gt;&lt;a href=&quot;#容器与项目（容器成员）&quot; class=&quot;headerlink&quot; title=&quot;容器与项目（容器成员）&quot;&gt;&lt;/a&gt;容器与项目（容器成员）&lt;/h2&gt;&lt;h3 id=&quot;flex-容器&quot;&gt;&lt;a href=&quot;#flex-容器&quot; c
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="1824437.github.io/categories/web/"/>
+    
+    
+      <category term="css3" scheme="1824437.github.io/tags/css3/"/>
+    
+      <category term="flex" scheme="1824437.github.io/tags/flex/"/>
+    
+  </entry>
   
   <entry>
     <title>常用配置文件格式</title>
