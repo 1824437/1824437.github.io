@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title> 字符集及编码 · <FED>ZhuTao's Blog</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="字符集及编码 - ZhuTao&lt;zhutao@live.cn&gt;"><meta name="keywords" content="Javascript Typescript CSS Sass Vue React MVVM"><meta name="author" content="ZhuTao&lt;zhutao@live.cn&gt;"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="1824437.github.io/atom.xml" title="&lt;FED&gt;ZhuTao's Blog"><meta name="generator" content="Hexo 4.0.0"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul id="nav_list" class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="首页" class="nav-list-link">首页</a></li><li class="nav-list-item"><a href="/categories/web/" target="_self" data-hover="WEB" class="nav-list-link">WEB</a></li><li class="nav-list-item"><a href="/categories/frame/" target="_self" data-hover="框架" class="nav-list-link">框架</a></li><li class="nav-list-item"><a href="/categories/browser/" target="_self" data-hover="浏览器" class="nav-list-link">浏览器</a></li><li class="nav-list-item"><a href="/categories/editor/" target="_self" data-hover="编辑器" class="nav-list-link">编辑器</a></li><li class="nav-list-item"><a href="/categories/standard/" target="_self" data-hover="标准" class="nav-list-link">标准</a></li><li class="nav-list-item"><a href="/categories/pop/" target="_self" data-hover="流行" class="nav-list-link">流行</a></li><li class="nav-list-item"><a href="/categories/os/" target="_self" data-hover="OS" class="nav-list-link">OS</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div><div id="nav_btn" class="nav-btn"><span></span><span></span><span></span></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">字符集及编码</h1><div class="post-info">2019-10-27<p class="visit"><i data-identity="web/字符集及编码/字符集及编码/" class="article-timer"></i><span>次访问</span></p></div><div class="post-content"><h3 id="warning"><a href="#warning" class="headerlink" title="warning"></a>warning</h3><p>后端在往页面上（如js变量,textarea值)串化的json字符串时，一定要再串化一下；否则串化在字串在浏览器处理过</p>
+<p>-</p>
+<ol>
+<li><h3 id="encodeURI，encodeURIComponent两个方法的区别？"><a href="#encodeURI，encodeURIComponent两个方法的区别？" class="headerlink" title="encodeURI，encodeURIComponent两个方法的区别？"></a>encodeURI，encodeURIComponent两个方法的区别？</h3><blockquote>
+<p>这两个方法是将字符转换是UTF-8编码；以%开头。<br>encodeURI为要的作用是对url中的<strong>不利于传递的字符进行编码</strong><br> 像中文字符按照《RFC 1738》规定，汉字必须编码；但怎么编，自行决定。<br> 所以，页面的字符编码与服务器端解码不一样，那么就会得到乱码。<br> encodeURI就是固定使用utf-8的对字串进行编码，但排除了一些字符。</p>
+</blockquote>
+<blockquote>
+<p>encodeURIComponent的作用是如果一个URL里面的<strong>某个参数也是一个url</strong><br>这样的话，这个URL就有了二义性，如下：<br>“<a href="http://www.b.com?a=100&amp;b=www.c.com?y=100&amp;z=200&quot;">http://www.b.com?a=100&amp;b=www.c.com?y=100&amp;z=200&quot;</a><br>所以，当一个url的参数包括另一个url的话，这个作为参数值的url必须encodeURIComponent编码。</p>
+</blockquote>
+</li>
+<li><h3 id="字符集-ASCII-GB-18030-2005-Unicode-latin-1"><a href="#字符集-ASCII-GB-18030-2005-Unicode-latin-1" class="headerlink" title="字符集 ASCII, GB 18030-2005, Unicode, latin-1"></a>字符集 ASCII, GB 18030-2005, Unicode, latin-1</h3><ul>
+<li><p>ASCII 共128个字符，7bit二进制表示，code point </p>
+</li>
+<li><p>latin-1 共256个字符，8位表示，在ascii基础上增加了</p>
+</li>
+<li><p>GB 18030-2005, 中国搞的一套最新字符集，之前有过几个版版像GB2312-80<br>  unicode中的汉字编码与GB 18030-2005是兼容的，或者说是按照中国的标准搬到unicode的码点上的。</p>
+</li>
+<li><p><strong>Unicode，最全的字符集，及无限的扩展</strong><br>  <a href="http://thoughtfly.iteye.com/blog/977495">0平面区间含义</a></p>
+<ul>
+<li><p>编号规则<br>用16进制编号从0-10ffff，共1114111个码位，能代表1114111个字符，把这些码位分成了17个平面； 或者说每次增加就定义一个平面，共定义了17个平面，容纳1114111个字符。</p>
+<table>
+<thead>
+<tr>
+<th>平面</th>
+<th>码位段</th>
+<th>名称</th>
+<th>英文名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>U+0000 - U+FFFF</td>
+<td>基本多文种平面</td>
+<td>Basic Multilingual Plane</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4-13</td>
+<td></td>
+<td>未使用</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td>特别用途补充平面</td>
+<td>supplementary special-purpose plane</td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td>保留作为私人使用区</td>
+<td>private use area</td>
+</tr>
+<tr>
+<td>16</td>
+<td></td>
+<td>保留作为私人使用区</td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><p>编码方案    </p>
+<ul>
+<li><p>UCS2 与 UCS4</p>
+<p>  UCS2 被整合到了<strong>UTF-16</strong>里面。<br>  UCS2 就是用2个字节来代表码点，两个字节意味着：<br>  二进制值00000000 00000000 - 11111111 11111111<br>  十六进制值 0x0000 - 0xffff<br>  十进制值是 0 - 65535<br>  对应就是unicode字符集的0平面。</p>
+<p>  UCS4 被整合到了<strong>UTF-32</strong>里面。用4个字节代表码点。<br>  二进制 4个8位，太长不写了。<br>  十六进制 0x 00 00 00 00 - 0x FF FF FF FF<br>  十进制 0-4294967295<br>  能代表unicode现有的17个平面及未来扩展。 </p>
+</li>
+<li><p>UTF-32<br>  用位来表示一个字符，和unicode一一对应<br>  最大的二进制与16进制<br>  11111111 11111111 11111111 11111111 -&gt; ff ff ff ff<br>  缺点：<br>  代表字母a,ascii码的16进制为 61，而utf-32则是00 00 00 61,存放空间多了三位。</p>
+</li>
+<li><h4 id="UTF-8-可变长的编码方案"><a href="#UTF-8-可变长的编码方案" class="headerlink" title="UTF-8 可变长的编码方案"></a>UTF-8 可变长的编码方案</h4><ul>
+<li>unicode转码方案</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>unicode码点范围</th>
+<th>转换字节数</th>
+<th>转换规则</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x0000 - 0x007f</td>
+<td>1</td>
+<td>7位二进制（对应ascii标准表的128个字符）转8位2进制，前面加0</td>
+<td>0平面</td>
+</tr>
+<tr>
+<td>0x0080 - 0x07FF</td>
+<td>2</td>
+<td>110xxxxx 10xxxxxx</td>
+<td>0平面</td>
+</tr>
+<tr>
+<td>0x0800 - 0xFFFF</td>
+<td>3</td>
+<td>1110xxxx 10xxxxxx 10xxxxxx</td>
+<td>0平面</td>
+</tr>
+<tr>
+<td>0x010000 - 0x10FFFF</td>
+<td>4</td>
+<td>11110xxx 10xxxxxx 10xxxxxx 10xxxxxx</td>
+<td>1-16平面</td>
+</tr>
+<tr>
+<td>2，3，4字节的转换方法一样，设字节数为n，在第一个字节前面加n个1，n+1位上加个0(也就是紧跟着加个0)，后面的字节均加10.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>unicode 转 utf8 </p>
+<p>例“朱” unicode 码点 0x6731,按规则，转3个字符， 转2进制110 011100 110001;长度不够，先在前面补0 -&gt; 0110 011100 110001；再根据规则补：<br>1110 0110 10 011100 10 110001；最后转成16进制utf-8的字节序为e6 9c b1</p>
+</li>
+</ul>
+</li>
+<li><p>UTF-16编码</p>
+<ul>
+<li><p>编码规则</p>
+<table>
+<thead>
+<tr>
+<th>unicode code point</th>
+<th>存储字节数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x0000 - 0xffff</td>
+<td>2个字节</td>
+</tr>
+<tr>
+<td>0x010000 - 0x10ffff</td>
+<td>4个字节</td>
+</tr>
+</tbody></table>
+</li>
+<li><h4 id="高低位"><a href="#高低位" class="headerlink" title="高低位"></a>高低位</h4><p>  在unicode 0平面中有一个码段未被使用，utf-16利用了这一码段。<br>  0xd800 - 0xdfff ,一共2048个码点。<br>  高位 0xd800 - 0xdbff,1024个<br>  低位 0xdc00 0 0xdfff,1024个</p>
+</li>
+<li><p>utf-16编码与unicode的码点的对应关系：  </p>
+<p>  2个字节的，与0平面一一对应。<br>  4个字节的，使用高低位组合：<br>  高位与低位可以组合出1024*1024 = 1048576个编码<br>  而除了0平面，码点范围0x010000 - 0x10ffff的码点正好也是1048576<br>  所以，utf16用高低位4个字节与unicode的非0平面作了一一对应。<br>  所以，当uft16编码中遇到高位编码肯定不是代表某个字符，因为码位上没有字符，而且高位的后边一定会跟着一个低位编码，这样就成了一个4字节编码。然后通过公式找到unicode码位。</p>
+</li>
+<li><p>utf-16与unicode的转换</p>
+<p>  2个字节的直接相等。<br>  4个字节的：<br>  高位 Math.floor((codePoint - 0x010000) / 0x400) + 0xd800<br>  低位 (codePoint - 0x010000)%0x400 + 0xdc00  </p>
+<p>  例：𝌆 unicode code point u+1d306<br>  高位 Math.floor((0x1d306 - 0x010000) / 0x400) + 0xd800 =0xd834<br>  低位 (0x1d306 - 0x010000) % 0x400 + 0xdc00 = 0xdf06<br>  utf16编码为 0x d834 df06</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="3">
+<li><h3 id="输入码-区位码-国标码-机内码"><a href="#输入码-区位码-国标码-机内码" class="headerlink" title="输入码, 区位码, 国标码, 机内码"></a>输入码, 区位码, 国标码, 机内码</h3><ul>
+<li>输入码，就是各种中文输入法</li>
+<li>区位码，橫94区纵94位映射的中文字符集 gb2312</li>
+<li>国标码，GB 18030-2005。</li>
+<li>机内码，十六进制的码位（码点 code-point）。</li>
+</ul>
+</li>
+<li><h3 id="bom字符（字节序）了解更多-2-3"><a href="#bom字符（字节序）了解更多-2-3" class="headerlink" title="bom字符（字节序）了解更多 2 3"></a>bom字符（字节序）<a href="http://unicode.org/faq/utf_bom.html#BOM">了解更多</a> <a href="http://7567567.blog.51cto.com/706378/641744">2</a> <a href="http://www.cnblogs.com/flysnail/archive/2011/10/25/2223721.html">3</a></h3><ul>
+<li><p>bom字符，表明该文件的编码方式；存放于文档头</p>
+<table>
+<thead>
+<tr>
+<th>字节</th>
+<th>编码格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>00 00 FE FF</td>
+<td>UTF-32BE</td>
+</tr>
+<tr>
+<td>FF FE 00 00</td>
+<td>UTF-32LE</td>
+</tr>
+<tr>
+<td>FE FF</td>
+<td>UTF-16BE</td>
+</tr>
+<tr>
+<td>FF FE</td>
+<td>UTF-16LE</td>
+</tr>
+<tr>
+<td>EF BB BF</td>
+<td>UTF-8</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code>utf-8中，以单字节（8bit)为编码单位，&quot;357\273\277&quot;用8进制表示的；读取异常可以删掉。
+地超过1字节的编码方案中，utf16,32；bom是必须的，分为大端序，小端序。  
+大端字节序，高字节存于内存低地址，低字节存于内存高地址；小端字节序反之。   
+例：  
+&quot;𝌆&quot;字，unicode codePoint : u+1d306,   
+utf-16编码为:0x d8 34 df 06, 占四字节  
+大端序 d8 34 df 06 , 小端序 06 df 34 d8  
+为啥要这么搞，因为win是小端序，mac用大端序。  
+所以才搞个bom告诉你，你要怎么读这个文件。</code></pre><ol start="4">
+<li><h3 id="javascript相关字符的问题"><a href="#javascript相关字符的问题" class="headerlink" title="javascript相关字符的问题"></a>javascript相关字符的问题</h3><ul>
+<li><p>javascript允许直接使用codePoint表示字符。<br>  es6前支持utf-16；0平面使用 \u&lt;4位codePoint&gt;<br>  非0平面的字符可以使用高低位，如：<br>  𝌆  “\ud834\udf06”;<br>  如何转? </p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>, x = <span class="string">"a中𝌆"</span>, output = [];</span><br><span class="line"><span class="keyword">while</span> (i &lt; x.length)&#123;</span><br><span class="line">	<span class="keyword">let</span> codePoint = x[i].charCodeAt().toString(<span class="number">16</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span>(codePoint&lt;<span class="number">127</span>)&#123;</span><br><span class="line">		output.push(<span class="string">"\\x"</span> + codePoint);</span><br><span class="line">		i++; </span><br><span class="line">		<span class="keyword">continue</span>;</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span> (codePoint &gt;=<span class="number">0xd800</span> &amp;&amp; codePoint&lt;= <span class="number">0xdbff</span>)&#123;</span><br><span class="line">		output.push(<span class="string">"\\u"</span> </span><br><span class="line">		+ codePoint.toString(<span class="number">16</span>) </span><br><span class="line">		+  <span class="string">"\\u"</span></span><br><span class="line">		+  x[++i].charCodeAt().toString(<span class="number">16</span>)</span><br><span class="line">		);</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		output.push(<span class="string">"\\u"</span> + codePoint.toString(<span class="number">16</span>));</span><br><span class="line">	&#125;;</span><br><span class="line">	i++;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(output.join(<span class="string">""</span>)+ <span class="string">""</span>);</span><br></pre></td></tr></table></figure>
+<p>  这个值只能在js里用。html不支持utf-16编码；<br>  html里面直接 “&amp;#” + “𝌆”.codePointAt() + “;”;</p>
+<p>  es6:支持unicode全集, 0平面不变，非0平面用 \u{&lt;4位以上codePoint&gt;}<br>  𝌆 “\ud834\udf06” 或 “\u{1d306}”<br>  所以，”𝌆”.length = 2;<br>  所以，”a中𝌆” 用for in 遍历4次，而for of 遍历3次（es6)  </p>
+<p>  如果字符串范围超出了0平面，那么得到准确的字串的个数可以用           Array.from(str).length;</p>
+<p>  0平面字符处理与非0平面的不同：<br>  “a中”.charAt(1) // 中<br>  “a中”.charCodeAt(1).toString(16) // 4e2d<br>  String.fromCharCode(0x4e2d) // 中</p>
+<p>  “a𝕄”.codePointAt(1) // 1d544<br>  String.fromCodePoint(0x1d544); // 𝕄</p>
+</li>
+<li><p>支持8位的latin-1字符。 用\x&lt;2位codePoint&gt;</p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="5">
+<li><h3 id="html-相关字符的问题"><a href="#html-相关字符的问题" class="headerlink" title="html 相关字符的问题"></a>html 相关字符的问题</h3><ol>
+<li><p>支持所有unicode码点；支持10进制和16进制,支持32位<br>中国 = &amp;#20013;&amp;#22269;<br>  = &amp;#x4e2d;&amp;#x56fd;<br>𝕄 = &amp;#120132; = &amp;#x1d544;</p>
+</li>
+<li><p>支持实体, 如空格 &nbsp;</p>
+</li>
+</ol>
+</li>
+<li><h3 id="换行符的问题"><a href="#换行符的问题" class="headerlink" title="换行符的问题"></a>换行符的问题</h3><p> <a href="http://www.cnblogs.com/del/archive/2009/03/06/1404959.html">unicode速查表</a></p>
+<p> 在文本处理中, CR, LF, CR/LF是不同操作系统上使用的换行符。<br> Dos和windows采用回车+换行CR/LF表示下一行,<br> 而UNIX/Linux采用换行符LF表示下一行，<br> 苹果机(MAC OS系统)则采用回车符CR表示下一行.<br> CR，回车控制符。用符号’\r’表示, 十进制ASCII代码是13, 十六进制代码为0x0D;<br> LF，换行控制符。使用’\n’符号表示, ASCII代码是10, 十六制为0x0A.<br> 所以Windows平台上换行在文本文件中是使用 0d 0a 两个字节表示, 而UNIX和苹果平台上换行则是使用0a或0d一个字节表示。</p>
+<p> 还有一些码位能造成换行如：codePoint 2028-202f</p>
+<p> 引发换行用此正则可替换（0平面）</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> delControllerSting = <span class="regexp">/[\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="css伪元素content的值"><a href="#css伪元素content的值" class="headerlink" title="css伪元素content的值"></a>css伪元素content的值</h3><p> unicode 0区 e000-f8ff 自行使用区域  Private Use Zone  </p>
+<p> <code>:before {content:&quot;\0020&quot;} //用反斜线+4位16进制,0020是空格</code></p>
+</li>
+<li><h3 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h3><ul>
+<li><p>JSON无法解析</p>
+<blockquote>
+<p>一个json对象的属性包含了另一个json对象的串化，后端要求解析这个属性成为一个大json对象<br>  因为这个属性之前是单独串化的，故引号做了一次转义。<br>  而这次修改后，老数据后端在页面上通过JS变量返回给前台的时候，这个大json以字串返回，但感觉并没有串化，仅仅只是在外加了个单引号（恰好里面都是双引号，json标准格式）;正常应该将转义符再转一次，也就是\变\。<br>  前端处理时，已无法处理。因为仅一次转义符已在script变量定义时消费掉了。双引号被正常解析，如下举例：  </p>
+</blockquote>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="string">'&#123;"a":"&lt;p style=\"color:red;\"&gt;&lt;/p&gt;"&#125;'</span></span><br><span class="line"><span class="comment">//这是html源码字串，而js获得字串时已解析成</span></span><br><span class="line"><span class="string">'&#123;"a":"&lt;p style="color:red;"&gt;&lt;/p&gt;"&#125;'</span></span><br><span class="line"><span class="comment">//再通过JSON.parse时，color前面的双引号被正常解析，</span></span><br><span class="line"><span class="comment">//故后面的语法全错了。</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>最后将外加的单引号去掉，前端直接获得json对象。<br>  其实后端拍之前串化一次也可以，而不是仅仅外加单引号。<br>  <code>&#39;{&quot;a&quot;:&quot;&lt;p style=\\&quot;color:red;\\&quot;&gt;&lt;/p&gt;&quot;}&#39;</code></p>
+</blockquote>
+<p>  此坑还有个背景，以为是特殊字符导致的。因为json串里有html串，以前经常发生串里有能产生换行的字符导致无法正常解析，恰好这次里面发现了一个\u2003，后来发现并不是它的问题。</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="Nodejs-request-URL-中文乱码"><a href="#Nodejs-request-URL-中文乱码" class="headerlink" title="{Nodejs} request URL 中文乱码"></a>{Nodejs} request URL 中文乱码</h3><p>浏览器端发送请求时, 浏览器已处理过请求中的中文字符; node端需要手动处理: encodeURI(url)，不处理就会出现乱码。</p>
+<h3 id="IE浏览器中文乱码"><a href="#IE浏览器中文乱码" class="headerlink" title="IE浏览器中文乱码"></a>IE浏览器中文乱码</h3><p>ie没有自动编码，在get模式下出现乱码，encodeURI(url)可解</p>
+<h3 id="浏览器直接访问JS文件，-中文乱码"><a href="#浏览器直接访问JS文件，-中文乱码" class="headerlink" title="浏览器直接访问JS文件， 中文乱码"></a>浏览器直接访问JS文件， 中文乱码</h3><p>需要在Ng中配置<code>http{ charset UTF-8;}</code></p>
+<h3 id="kindediter-粘贴html片段后，存为json-string；再parse时异常"><a href="#kindediter-粘贴html片段后，存为json-string；再parse时异常" class="headerlink" title="kindediter 粘贴html片段后，存为json string；再parse时异常"></a>kindediter 粘贴html片段后，存为json string；再parse时异常</h3><p>原因是font-family中有中文字体；中文字体有引号(在innerHTML时被转义&amp;quot),引号在解析的时候变成了双引号与JSON格式中的双引号冲突。</p>
+<ol>
+<li><code>movePastedData()</code> //没改变</li>
+<li><code>_formatHtml()</code> //删除了转义了的中文字体的尾引号<br>这样问题就产生了，最后生成的html符中有一个独立的&amp;quot,parse字串的时候这个被转成”号。<br>最后，将html串的style属性去除。</li>
+</ol>
+</div></article></div><div class="right-container"><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/web/sass/sass/" title="SASS" class="prev">PREV</a></div><div class="copyright"><p>© 2016 - 2019 <a target="_blank">ZhuTao<zhutao@live.cn></a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p> <span style="padding-right: 6px;">闽ICP备16007301号-2</span></p></div><div class="totop"><i></i></div></div></footer><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script src="/scripts/jquery-1.8.2.min.js"></script><script src="/scripts/ar-anchor.js"></script><script src="/scripts/main.js"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script>const valineAPI = (() => {
+try {
+    AV.init("aD8jJBpu4oew3ovNY73z6Rdq-gzGzoHsz", "FdzS5SOPHdhYQoEUngQ8K2QW");
+} catch(error) {}
+const isExist = (identity) => {
+    identity = identity || getRealPath();
+    let query = new AV.Query('Timer');
+    return new Promise((resolve, reject) => {
+    query.equalTo("identity", identity);
+    query.find().then(results => {
+        resolve(results.length > 0);
+    }, error => reject(error));
+    })
+}
+
+const _get = (identity) => {
+    let query = null;
+    if(identity && identity instanceof Array){
+    let querys = [];
+    for(let i = 0; i < identity.length; ++i) {
+        querys[i] = new AV.Query('Timer');
+        querys[i].equalTo('identity', identity[i]);
+    }
+    query = AV.Query.or.apply(null ,querys);
+    } else {
+    identity = identity || getRealPath();
+    query = new AV.Query("Timer");
+    query.equalTo("identity", identity);
+    }
+
+    return new Promise((resolve, reject) => {
+    query.find()
+    .then(results => resolve(results))
+    .catch(error => reject(error))
+    })
+}
+
+const create = (identity) => {
+    identity = identity || getRealPath();
+    return new Promise((resolve, reject) => {
+    let Todo = AV.Object.extend('Timer');
+    let todo = new Todo();
+    todo.set("times", 1);
+    todo.set("identity", identity);
+    todo.save().then(res => resolve(true), error => reject(error));
+    })
+}
+
+const update = (identity) => {
+    identity = identity || getRealPath();
+    return new Promise((resolve, reject) => {
+    let query = new AV.Query('Timer');
+    query.equalTo("identity", identity);
+    query.find().then(todos => {
+        todos.forEach(todo => {
+        todo.set("times", todo.attributes.times + 1);
+        });
+        return AV.Object.saveAll(todos);
+    }).then(todos => resolve(true), error => reject(error));
+    })
+}
+
+return {
+    isExist,
+    _get,
+    update,
+    create
+}
+})()
+
+const calcAndWriteTimes = () => {
+let isPost = true;
+
+let timerAllDOM = document.querySelectorAll(".article-timer");
+
+if(isPost) {
+    let identity = timerAllDOM[0].getAttribute("data-identity");
+    valineAPI.isExist(identity)
+    .then(exist => {
+    if(exist) {
+        return valineAPI.update(identity);
+    }
+    return new Promise(resolve => resolve(true));
+    })
+    .then( succuess => valineAPI._get(identity))
+    .then( result => timerAllDOM[0].innerText = result[0].attributes.times)
+    .catch(error => console.log(error.message))
+    return ;
+}
+
+let timerDOMCache = {};
+
+for(let timerDOM of timerAllDOM) {
+    let identity = timerDOM.getAttribute("data-identity");
+    if(timerDOMCache.hasOwnProperty(identity)){
+    timerDOMCache[identity].dom.push(timerDOM);
+    }else{
+    timerDOMCache[identity] = {
+        dom: [timerDOM],
+        times: undefined
+    };
+    }
+}
+
+let identities = Object.keys(timerDOMCache);
+valineAPI._get(identities).then(results => {
+    for(let result of results) {
+    let {identity, times} = result.attributes;
+    timerDOMCache[identity].times = times;
+    timerDOMCache[identity].dom.map(item => item.innerText = times);
+    }
+    for(let identity of identities) {
+    if(timerDOMCache[identity].times){
+        continue;
+    }
+    timerDOMCache[identity].dom.map(item => item.innerText = 1);
+    valineAPI.create(identity);
+    }
+}).catch(error => console.log(error.message))
+}
+
+if(true){
+calcAndWriteTimes();
+}</script></body></html>
