@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>&lt;FED&gt;ZhuTao&#39;s Blog</title>
+  <title>经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱</title>
   
-  <subtitle>经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱</subtitle>
+  <subtitle>ZhuTao&#39;s Blog&lt;zhutao@live.cn&gt;</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
