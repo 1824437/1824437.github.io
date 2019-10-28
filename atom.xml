@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-10-28T02:57:03.182Z</updated>
+  <updated>2019-10-28T03:02:02.238Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="1824437.github.io/standard/%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86/%E5%B8%B8%E7%94%A8%E6%A0%87%E5%87%86/"/>
     <id>1824437.github.io/standard/常用标准/常用标准/</id>
     <published>2019-10-28T02:29:26.521Z</published>
-    <updated>2019-10-28T02:57:03.182Z</updated>
+    <updated>2019-10-28T03:02:02.238Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h2><ol><li>W3C</li><li>Whatwg</li><li>ECMA</li></ol><h2 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h2><ol><li>W3C</li><li>WHATWG</li><li>ECMA</li></ol><h2 id="标准"><a href="#标准" class="headerlink" title="标准"></a>标准</h2>]]></content>
     
     <summary type="html">
     
@@ -31,7 +31,7 @@
       
         &lt;h2 id=&quot;组织&quot;&gt;&lt;a href=&quot;#组织&quot; class=&quot;headerlink&quot; title=&quot;组织&quot;&gt;&lt;/a&gt;组织&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;W3C&lt;/li&gt;
-&lt;li&gt;Whatwg&lt;/li&gt;
+&lt;li&gt;WHATWG&lt;/li&gt;
 &lt;li&gt;ECMA&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;标准&quot;&gt;&lt;a href
@@ -42,6 +42,12 @@
     
       <category term="standard" scheme="1824437.github.io/categories/standard/"/>
     
+    
+      <category term="W3C" scheme="1824437.github.io/tags/W3C/"/>
+    
+      <category term="ECMA" scheme="1824437.github.io/tags/ECMA/"/>
+    
+      <category term="WHATWG" scheme="1824437.github.io/tags/WHATWG/"/>
     
   </entry>
   
