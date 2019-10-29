@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-10-28T03:02:02.238Z</updated>
+  <updated>2019-10-29T06:15:21.980Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -15,6 +15,91 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue与React比较</title>
+    <link href="1824437.github.io/frame/%E6%A1%86%E6%9E%B6%E7%9A%84%E6%AF%94%E8%BE%83/%E6%A1%86%E6%9E%B6%E7%9A%84%E6%AF%94%E8%BE%83/"/>
+    <id>1824437.github.io/frame/框架的比较/框架的比较/</id>
+    <published>2019-10-29T06:12:32.338Z</published>
+    <updated>2019-10-29T06:15:21.980Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="框架比较"><a href="#框架比较" class="headerlink" title="框架比较"></a>框架比较</h1><ul><li><p>Angular</p><ul><li>MVW框架</li><li>MIT license</li></ul></li><li><p>Vue</p><ul><li>MVVM框架</li><li>MIT license</li></ul></li><li><p>React</p></li></ul><h2 id="Vue-vs-React"><a href="#Vue-vs-React" class="headerlink" title="Vue vs React"></a>Vue vs React</h2><h3 id="共通点"><a href="#共通点" class="headerlink" title="共通点"></a>共通点</h3><ul><li><p>所有的state都必须预先定义。否则变化不跟踪。</p><ul><li><p>这点对于需要异步数据初始化状态来讲，有两种初始化的办法</p><ol><li><p>异步请求数据与初始化实例同步运行,在实例的mounted里添加then方法来变更空白数据。</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">let asyncData = fetch(...);</span><br><span class="line">new Vue(&#123;</span><br><span class="line">store,</span><br><span class="line">mounted()&#123;</span><br><span class="line">asyncData.then(</span><br><span class="line">data =&gt; &#123;</span><br><span class="line">this.$store.commit(&quot;***&quot;, data);</span><br><span class="line">&#125;</span><br><span class="line">).catch();</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p> 这种方法被渲染一次空白，然后再更新一遍所有的数据。</p></li><li><p>先拿到fetch的数据后开始初始化实例。</p><p>对速度而言，第一种首选。</p></li></ol></li></ul></li></ul><a id="more"></a><blockquote><p>关于props</p></blockquote><h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a><em>Vue</em></h4><blockquote><p>vue 的this.$data,this.$props通过初始化后，可以通过this[dataName|propName]访问。</p></blockquote><ol><li>props是用来传递数据的，方法通过@custom event传递</li><li>属性改变，立即会改变所有使用此属性的视图。但是基础属性值必须通过this.$emit的方式修改。</li><li>实现了双绑, $props={parcel.x} v-model={parcel.x}, 简单实现动态修改属性parcel.x，任何值用此属性的视图都会改变。（对非基础值而言）</li><li>插槽功能： 可以使用slot功能 多插用具名slot。</li><li>动态组件: “:is”特性解决。<ul><li>将各个需要引用的动态组件require到components字段。key会作为:is的值。</li><li>在模版中使用<code>&lt;component v-bind:is=&quot;currentView&quot;&gt;&lt;/component&gt;</code></li></ul></li><li>props的动态使用<ul><li>加逻辑使用时可以在computed里定义方法，然后直接使用方法名。</li></ul></li><li>可以通过set设置数组的值。</li><li>支持mixin对象。对组件做一些合并。</li><li>extends 继承</li><li>v-pre标记，vue不会关心这个标记下的dom.</li></ol><h4 id="React"><a href="#React" class="headerlink" title="React"></a><em>React</em></h4><ol><li>任何要传递的资源都通过props，包括数据，函数</li><li>不能直接通过修改数据属性的值来获得视图修改，而是修改state，再将state通过属性往下传。</li><li>无双绑概念,通过属性传递方法来个改。</li><li>插槽功能：使用props.children实现; 多插用自定义属性。</li><li>动态组件： <ul><li>引入各组件</li><li>在render之间先判断使用哪个组件并赋值给以大写字母开头的变量，然后直接在return中直接引用。</li></ul></li><li>props的动态使用<ul><li>在类中直接创建方法，使用: {a()}</li></ul></li><li>改完后，通过setState重新赋值一下。</li><li>不支持mixin</li><li>高阶组件，能实现继承及vue的自定义属性</li><li>非监控dom, 弄一个空dom，不引用任何属性，react不会关心这个dom的存在。</li></ol><p>-</p><blockquote><p>一个input.text ,受属性x的影响获得值x,也受自身变化获得自身的值y。<br>如何设计动态修改state.m ?</p></blockquote><h4 id="Vue-1"><a href="#Vue-1" class="headerlink" title="Vue"></a><em>Vue</em></h4><ol><li>v-model=y</li><li>methods : {changeY(){}}</li></ol><h4 id="React-1"><a href="#React-1" class="headerlink" title="React"></a><em>React</em></h4><p>-</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;框架比较&quot;&gt;&lt;a href=&quot;#框架比较&quot; class=&quot;headerlink&quot; title=&quot;框架比较&quot;&gt;&lt;/a&gt;框架比较&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Angular&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MVW框架&lt;/li&gt;
+&lt;li&gt;MIT license&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Vue&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MVVM框架&lt;/li&gt;
+&lt;li&gt;MIT license&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;React&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Vue-vs-React&quot;&gt;&lt;a href=&quot;#Vue-vs-React&quot; class=&quot;headerlink&quot; title=&quot;Vue vs React&quot;&gt;&lt;/a&gt;Vue vs React&lt;/h2&gt;&lt;h3 id=&quot;共通点&quot;&gt;&lt;a href=&quot;#共通点&quot; class=&quot;headerlink&quot; title=&quot;共通点&quot;&gt;&lt;/a&gt;共通点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;所有的state都必须预先定义。否则变化不跟踪。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;这点对于需要异步数据初始化状态来讲，有两种初始化的办法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;异步请求数据与初始化实例同步运行,在实例的mounted里添加then方法来变更空白数据。&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;let asyncData = fetch(...);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;new Vue(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	store,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	mounted()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		asyncData.then(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			data =&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				this.$store.commit(&amp;quot;***&amp;quot;, data);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		).catch();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; 这种方法被渲染一次空白，然后再更新一遍所有的数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;先拿到fetch的数据后开始初始化实例。&lt;/p&gt;
+&lt;p&gt;对速度而言，第一种首选。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="frame" scheme="1824437.github.io/categories/frame/"/>
+    
+    
+      <category term="Vue" scheme="1824437.github.io/tags/Vue/"/>
+    
+      <category term="React" scheme="1824437.github.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jade, Node.js Template Engine</title>
+    <link href="1824437.github.io/popular/jade/jade/"/>
+    <id>1824437.github.io/popular/jade/jade/</id>
+    <published>2019-10-28T09:48:18.403Z</published>
+    <updated>2019-10-28T09:52:38.706Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一款server端-Node-js-模版。"><a href="#一款server端-Node-js-模版。" class="headerlink" title="一款server端(Node.js)模版。"></a>一款server端(Node.js)模版。</h2><p><a href="http://jade-lang.com/">official</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一款server端-Node-js-模版。&quot;&gt;&lt;a href=&quot;#一款server端-Node-js-模版。&quot; class=&quot;headerlink&quot; title=&quot;一款server端(Node.js)模版。&quot;&gt;&lt;/a&gt;一款server端(Node.js)模版。&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="popular" scheme="1824437.github.io/categories/popular/"/>
+    
+    
+      <category term="tmeplate" scheme="1824437.github.io/tags/tmeplate/"/>
+    
+      <category term="jade" scheme="1824437.github.io/tags/jade/"/>
+    
+  </entry>
   
   <entry>
     <title>FED岗位通常需要参考的标准，规范</title>
@@ -84,13 +169,13 @@
     <link href="1824437.github.io/os/%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"/>
     <id>1824437.github.io/os/常用配置文件/常用配置文件格式/</id>
     <published>2019-10-27T08:05:41.060Z</published>
-    <updated>2019-10-28T04:25:32.074Z</updated>
+    <updated>2019-10-29T06:15:18.176Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="1-ini"><a href="#1-ini" class="headerlink" title="1. ini"></a>1. ini</h4><h4 id="2-properties-java下的配置文件"><a href="#2-properties-java下的配置文件" class="headerlink" title="2. properties java下的配置文件"></a>2. properties java下的配置文件</h4><p><strong>格式</strong></p><ol><li><p>注释</p><p> 以!或#开头的行将作为comment注释行 </p></li><li><p>一行一个键值对, 键值对分隔符[=, :, 空格, tab制表符]</p></li><li><p>忽略多余的空格及tab制表符</p></li><li><p>=, :转义字符=和:字符</p></li><li><p>跨行书写时在尾部增加转义符\</p></li><li><p>无值时视为空格</p></li><li><p>非ASCII字符需要使用Unicode转义序列</p><p> \u****</p></li></ol><a id="more"></a><h4 id="3-json"><a href="#3-json" class="headerlink" title="3. json"></a>3. json</h4><h4 id="4-xml"><a href="#4-xml" class="headerlink" title="4. xml"></a>4. xml</h4><h4 id="5-yaml"><a href="#5-yaml" class="headerlink" title="5. yaml"></a>5. yaml</h4><p><a href="http://www.yaml.org/">http://www.yaml.org/</a></p><h4 id="6-plist"><a href="#6-plist" class="headerlink" title="6.plist"></a>6.plist</h4><h4 id="7-HOCON"><a href="#7-HOCON" class="headerlink" title="7.HOCON"></a>7.HOCON</h4><h4 id="8-toml"><a href="#8-toml" class="headerlink" title="8.toml"></a>8.toml</h4>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-ini"><a href="#1-ini" class="headerlink" title="1. ini"></a>1. ini</h2><h2 id="2-properties-java下的配置文件"><a href="#2-properties-java下的配置文件" class="headerlink" title="2. properties java下的配置文件"></a>2. properties java下的配置文件</h2><p><strong>格式</strong></p><ol><li><p>注释</p><p> 以!或#开头的行将作为comment注释行 </p></li><li><p>一行一个键值对, 键值对分隔符[=, :, 空格, tab制表符]</p></li><li><p>忽略多余的空格及tab制表符</p></li><li><p>=, :转义字符=和:字符</p></li><li><p>跨行书写时在尾部增加转义符\</p></li><li><p>无值时视为空格</p></li><li><p>非ASCII字符需要使用Unicode转义序列</p></li></ol><p>\u****</p><a id="more"></a><h2 id="3-json"><a href="#3-json" class="headerlink" title="3. json"></a>3. json</h2><h2 id="4-xml"><a href="#4-xml" class="headerlink" title="4. xml"></a>4. xml</h2><h2 id="5-yaml"><a href="#5-yaml" class="headerlink" title="5. yaml"></a>5. yaml</h2><p><a href="http://www.yaml.org/">http://www.yaml.org/</a></p><h2 id="6-plist"><a href="#6-plist" class="headerlink" title="6.plist"></a>6.plist</h2><h2 id="7-HOCON"><a href="#7-HOCON" class="headerlink" title="7.HOCON"></a>7.HOCON</h2><h2 id="8-toml"><a href="#8-toml" class="headerlink" title="8.toml"></a>8.toml</h2>]]></content>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;1-ini&quot;&gt;&lt;a href=&quot;#1-ini&quot; class=&quot;headerlink&quot; title=&quot;1. ini&quot;&gt;&lt;/a&gt;1. ini&lt;/h4&gt;&lt;h4 id=&quot;2-properties-java下的配置文件&quot;&gt;&lt;a href=&quot;#2-properties-java下的配置文件&quot; class=&quot;headerlink&quot; title=&quot;2. properties java下的配置文件&quot;&gt;&lt;/a&gt;2. properties java下的配置文件&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;1-ini&quot;&gt;&lt;a href=&quot;#1-ini&quot; class=&quot;headerlink&quot; title=&quot;1. ini&quot;&gt;&lt;/a&gt;1. ini&lt;/h2&gt;&lt;h2 id=&quot;2-properties-java下的配置文件&quot;&gt;&lt;a href=&quot;#2-properties-java下的配置文件&quot; class=&quot;headerlink&quot; title=&quot;2. properties java下的配置文件&quot;&gt;&lt;/a&gt;2. properties java下的配置文件&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;格式&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;注释&lt;/p&gt;
 &lt;p&gt; 以!或#开头的行将作为comment注释行 &lt;/p&gt;
@@ -106,9 +191,9 @@
 &lt;li&gt;&lt;p&gt;无值时视为空格&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;非ASCII字符需要使用Unicode转义序列&lt;/p&gt;
-&lt;p&gt; \u****&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;\u****&lt;/p&gt;
     
     </summary>
     
