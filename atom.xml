@@ -371,4 +371,197 @@
     
   </entry>
   
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/shell%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/"/>
+    <id>1824437.github.io/os/shell特殊符号/</id>
+    <published>2019-05-09T01:19:58.490Z</published>
+    <updated>2019-10-30T00:16:14.612Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>字符</th><th>说明</th><th>用途</th><th>备注</th></tr></thead><tbody><tr><td>&lt;</td><td></td><td></td><td></td></tr><tr><td>&lt;&lt;</td><td></td><td></td><td></td></tr><tr><td>*</td><td></td><td></td><td></td></tr><tr><td>?</td><td></td><td></td><td></td></tr><tr><td>\</td><td></td><td></td><td></td></tr><tr><td>‘</td><td></td><td></td><td></td></tr><tr><td>“</td><td></td><td></td><td></td></tr><tr><td>`…`</td><td></td><td></td><td></td></tr><tr><td>[]</td><td></td><td></td><td></td></tr><tr><td>$</td><td></td><td></td><td></td></tr><tr><td>.</td><td>内置句点</td><td></td><td></td></tr><tr><td>#</td><td></td><td></td><td></td></tr><tr><td>{}</td><td></td><td></td><td></td></tr><tr><td>:</td><td>内置空串</td><td></td><td></td></tr><tr><td>&amp;&amp;</td><td></td><td></td><td></td></tr><tr><td>||</td><td></td><td></td><td></td></tr><tr><td>!</td><td></td><td></td><td></td></tr><tr><td>$()</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table><p><strong>&amp;&amp; 逻辑符号</strong>   </p><p>前面的命令正确, 后面的继续执行</p><p><strong>|| 逻辑符号</strong>  </p><p>前面的命令无效, 后面的执行。</p><p><strong>; 顺序执行</strong></p><p>一个挨一个执行</p><p><strong>&amp; 后台工作</strong> </p><p>单一个&amp; 符号，且放在完整指令列的最后端，即表示将该指令列放入后台中工作。</p><p><strong>| 管道 (pipeline)</strong>  </p><p>pipeline 是 UNIX 系统，基础且重要的观念。连结上个指令的标准输出，做为下个指令的标准输入。 </p><p><strong>&gt; 输出到文件</strong><br><code>ls &gt;1.txt</code></p><p><strong>&gt;&gt; 追加到文件</strong><br><code>cat a.txt&gt;&gt;b.txt</code></p><p>-</p><p><strong>伪设备</strong></p><ul><li><p>/dev/null</p><p>  <code>cat a.txt &gt;/dev/null</code> 黑洞，屏幕上不会显示任何信息。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;字符&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;th&gt;用途&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;&amp;lt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="CentOS" scheme="1824437.github.io/tags/CentOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/ssh_linux%E7%9A%84%E8%BF%9C%E7%A8%8B%E6%89%A7%E8%A1%8C/"/>
+    <id>1824437.github.io/os/ssh_linux的远程执行/</id>
+    <published>2019-05-09T01:19:58.490Z</published>
+    <updated>2019-10-30T00:17:31.379Z</updated>
+    
+    <content type="html"><![CDATA[<p>references</p><p>完整的server/client配置实践<a href="./git服务部署.md">git服务部署</a></p><p><strong>相关命令</strong></p><p>###ssh  </p><p>用法<a href="http://blog.csdn.net/pipisorry/article/details/52269785">http://blog.csdn.net/pipisorry/article/details/52269785</a></p><p><code>ssh -V</code> 查看ssh版本 </p><ul><li>默认端口: 22</li></ul><p>ssh-keygen</p><p>-</p><h3 id="公钥、私钥"><a href="#公钥、私钥" class="headerlink" title="公钥、私钥"></a>公钥、私钥</h3><p><strong>资料</strong></p><p>数据公钥加密和认证中的私钥公钥<a href="http://www.williamlong.info/archives/837.html">http://www.williamlong.info/archives/837.html</a><br>使用ssh-keygen设置SSH无密码登录<a href="http://blog.csdn.net/leexide/article/details/17252369">http://blog.csdn.net/leexide/article/details/17252369</a><br>Linux ssh服务开启秘钥和密码认证<a href="https://www.cnblogs.com/xiaochina/p/6867298.html">https://www.cnblogs.com/xiaochina/p/6867298.html</a></p><p><strong>公钥,私钥是怎么实现不对称加密的?</strong></p><ol><li>私钥是绝对保密的,私钥用来进行解密和签名, 是给自己用的</li><li>公钥由本人公开，用于加密和验证签名，是给别人用的。</li><li>当该用户发送文件时，用私钥签名，别人用他给的公钥验证签名，可以保证该信息是由他发送的。当该用户接受文件时，别人用他的公钥加密，他用私钥解密，可以保证该信息只能由他接收到。</li></ol><p><strong>安全性</strong></p><p>目前能破解的RSA算法密钥是768个二进制位. 超过此长度的破解无人公开公布过。一般认为1024的密钥基本安全, 2048位的密码极其安全。</p><p><strong>生成公钥,私钥</strong></p><p>ssh-keygen</p><ul><li><p>-t <em>type</em> </p><p>  指定要创建的密钥类型。可以使用：”rsa1”(SSH-1) “rsa”(SSH-2) “dsa”(SSH-2)</p></li><li><p>-p</p><p>  要求改变某私钥文件的密语而不重建私钥。程序将提示输入私钥文件名、原来的密语、以及两次输入新密语。</p></li></ul><p><code>ssh-keygen -t rsa</code> 生成本机的公私钥</p><p><strong>.ssh目录及文件</strong></p><ol><li><p>known_hosts文件</p><p> 记录访问过的主机的公钥</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">192.168.237.72 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAppBeLNHwpSlWGtLMeW0SpJ0TQs8qyHWxyBxh1JM8b9mJgvsRj8/xUDjcDgC59xXQkeX37Hp4DtlWz4bwkR4im5WLQ3QVj0YSw/1WrB/x/TNhHWvFMP8IXi18ZfTuCtBTufZZzt0ZPFkbioKVf4hg3ukEXIhxYlRaByhb/2U22rBdImGAkq6tV7ZPvemfcTtrU+QLv61+mQoDOkbobOvbgSPlU3eH4CWED4bQ5C3oIlpGFLSjcYnslHwnCzFUsh1d/YH4Jpt6lX5kPzZFSRQVjqI8ucrLVhsQvtERKOzjQh3i611WbZB8Rn7dUS2jIWk5egUQPJ+bhDbGd9DqZ1th3Q==</span><br></pre></td></tr></table></figure></li><li><p>客户端配置文件</p><ul><li><p>/etc/ssh_config 全局配置</p></li><li><p>.ssh/config 本地配置</p><p>本地配置优先级高于全局配置 </p></li></ul><p> <strong>配置项</strong></p><ul><li><p>Host  主机配置（也是分段标志,接下了的配置就是和这个主机配置相关的，直到碰到另一个Host)</p><p>  <code>Host &lt;string&gt;</code><br>  <code>Host www.x.cn</code> domain<br>  <code>Host 123.123.123.123</code>ip<br>  <code>Host 123.123.*</code> 通配符<br>  <code>Host dev1</code> 别名<br>  <code>HostName www.x.cn</code><br>  <code>port 27155</code><br>  <code>User git</code>  </p></li><li><p>IdentityFile 用户身份标识</p><p>  <code>IdentifyFile &lt;private key file&gt;</code></p><p>  command mode: <code>ssh -i ~/.ssh/id_rsa 10.86.211.11</code>用私钥登录</p></li></ul></li></ol><pre><code>+ ProxyCommand     看不太懂，link先记下    [SSH ProxyCommand 实践 ](https://www.cnblogs.com/shanpow/p/4264867.html)配置详情参阅:《SSH权威指南》客户端的配置(page 280)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># generated by qzz-copy-id</span><br><span class="line">Host *</span><br><span class="line">    User tao.zhu</span><br><span class="line"></span><br><span class="line">Host *</span><br><span class="line">User tao.zhu</span><br><span class="line">ServerAliveInterval 30</span><br><span class="line">ControlMaster auto</span><br><span class="line">ControlPath ~/.ssh/persist/master-%r@%h:%p</span><br><span class="line">ControlPersist yes</span><br></pre></td></tr></table></figure></code></pre><ol start="3"><li><p>authorized_keys 文件</p><p> 服务器保存客户机的公钥。<br> 把自己的公钥放在服务器上的.ssh/authorized_keys文件内后，可直接ssh</p></li><li><p>/etc/ssh/moduli</p></li><li><p>/etc/ssh/ssh_config  存放作为客户端的一些ssh配置</p></li><li><p>etc/ssh/sshd_config 存放作为服务器端的一些ssh配置  </p></li></ol><h4 id="重新生成公钥后要干的事"><a href="#重新生成公钥后要干的事" class="headerlink" title="重新生成公钥后要干的事"></a>重新生成公钥后要干的事</h4><p>git SSH keys 重新设置<br>ssh 免登录主机重新设置</p><p><strong>注意 注意 注意</strong><br><strong>设置免密登录时，必须要保证被登录服务器用户的.ssh文件夹及下的authorized_keys文件除本用户的其它用户无写权限，否则免密登录不生效</strong><br><strong>还要密切注意服务器上/etc/ssh/sshd_config的下列字段必须打开</strong></p><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RSAAuthentication yes</span><br><span class="line">PubkeyAuthentication yes</span><br><span class="line">AuthorizedKeysFile.ssh/authorized_keys</span><br></pre></td></tr></table></figure></code></pre><blockquote><p><a href="https://www.cnblogs.com/snowbook/p/5671406.html">引用网文</a><br>后来，我详细查了一下，如果authorized_keys文件、$HOME/.ssh目录 或 $HOME目录让本用户之外的用户有写权限，那么sshd都会拒绝使用 ~/.ssh/authorized_keys 文件中的key来进行认证的。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;references&lt;/p&gt;
+&lt;p&gt;完整的server/client配置实践&lt;a href=&quot;./git服务部署.md&quot;&gt;git服务部署&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;相关命令&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;###ssh  &lt;/p&gt;
+&lt;p&gt;用法&lt;a href=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="远程执行" scheme="1824437.github.io/tags/%E8%BF%9C%E7%A8%8B%E6%89%A7%E8%A1%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/centos%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6/"/>
+    <id>1824437.github.io/os/centos同步文件/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:15:30.215Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="rsync"><a href="#rsync" class="headerlink" title="rsync"></a><a href="https://www.samba.org/ftp/rsync/rsync.html">rsync</a></h2><p><a href="http://www.cnblogs.com/f-ck-need-u/p/7221713.html">参数详解</a></p><h3 id="同步文件的模式"><a href="#同步文件的模式" class="headerlink" title="同步文件的模式"></a>同步文件的模式</h3><ol><li>检查模式</li><li>同步模式</li></ol><h3 id="工作方式-3种"><a href="#工作方式-3种" class="headerlink" title="工作方式 3种"></a>工作方式 3种</h3><h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><blockquote><p>同步是<strong>增量的! 增量的! 增量的！</strong>，即使<code>-R</code>在目标文件夹内创建文件夹也不会将已存在的同名文件夹内容清除</p></blockquote><p><strong>options</strong></p><ul><li><p><code>-r</code> 此选项告诉rsync以递归模式拷贝目录。</p><p>  不带r只能同步文件，如果不带r 同步目录则不会干活，提示<code>skipping directory .</code></p></li></ul><p><strong>eg</strong></p><blockquote><p>带和不带尾<code>/</code>是有区别的。 </p></blockquote><p><code>rsync -r ./from ./to</code> //这样写会把from 同步到to, to会生成一个from<br><code>rsync -r ./from/ ./to</code> //这样写会把from里的所有(file,directory)同步到to</p><p><strong>options</strong></p><ul><li><code>-R</code> 表示需要将源路径上的目录创建在目标文件夹内（所建文件夹的所有下级都会被增量复制)</li></ul><p><strong>eg</strong>  </p><p><code>rsync -R from/abc/a.txt /to</code> 同步a.txt，并创建from,abc文件夹。<br><strong>如果只复制路径的一部分则：用<code>.</code>隔开</strong><br><code>rsync -R from/./abc/a.txt /to</code> 同步a.txt, 并创建abc文件夹。</p><p><strong>options</strong></p><ul><li><p><code>--backup</code> 对目标文件夹内的<strong>相同的文件</strong>做备份</p><p>  备份默认使用<code>~</code>,可以使用<code>--suffix &lt;symbol&gt;</code><br>  <code>rsync -ri --backup --suffix=% from/ to</code><br>  也可以指定备份的路径，但路径必须存在.<code>--backup-dir=./to_back</code></p></li></ul><h4 id="不同主机同步"><a href="#不同主机同步" class="headerlink" title="不同主机同步"></a><strong>不同主机同步</strong></h4><p><strong>options</strong></p><ul><li><p><code>-e</code>指定所要使用的远程shell程序，默认为ssh</p><p>  <code>rsync -ir -e &quot;ssh -p 1080&quot; from/static t.z@138.128.197.152:~/static</code><br>  注意: 我的web root 是<code>/home/www/static</code>，但t.z没有w权限，所以先暂存到有权限的<code>~</code>下，然后在通过<code>sudo rsync -ri ~/static/ /home/www/static</code></p></li></ul><p><strong>options</strong></p><ul><li><code>--existing</code> 只更新目标端已存在的文件</li><li><code>--ignore-existing</code> 只更新目标端不存在的文件</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;rsync&quot;&gt;&lt;a href=&quot;#rsync&quot; class=&quot;headerlink&quot; title=&quot;rsync&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.samba.org/ftp/rsync/rsync.html&quot;&gt;rsync&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="rsync" scheme="1824437.github.io/tags/rsync/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/mac/"/>
+    <id>1824437.github.io/os/mac/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:16:52.711Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p><a href="https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html">https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html</a></p><ul><li><p>~/Applications </p><p>  包含一些只有当前用户可以使用的程序，比如我们安装了一个程序，安装时选Applications，应用程序将会默认安装到这里！</p></li><li><p>~/Documents 文稿</p></li><li><p>~/cert</p></li><li><p>~/etc</p></li><li><p>~/Libary 包括应用程序设置、预置及其它用户指定的系统资源或设置。</p></li><li><p>~/Public 你可以把需要与其它用户共享的文件放在这个目录中，默认状态下，这个目录可以被其它所有用户访问。</p></li><li><p>~/Desktop 桌面</p></li></ul><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>/etc/profile #全局配置，登录时默认读取（all users）<br>/etc/paths # 全局配置，登录时默认读取（all users）<br>/etc/bashrc #全局配置，bash shell执行时会读取（all users ）<br><del>/.bash_profile #当前用户配置，存在此文件则忽略</del>/.bash_login,<del>/.bashrc，通常该配置文件还会配置成去读取</del>/.bashrc。<br><del>/.bash_login #当login的方式执行时，并且无</del>/.bash_profile时，读取此文件<br><del>/.profile #若</del>/.bash_profile,~/.bash_login都不存在讲，读取此文件；<br>~/.bashrc #以non-login执行时，会执行此文件<br>~/.bash_logout #退出bash时，执行此文件  </p><h3 id="安装app影响的目录"><a href="#安装app影响的目录" class="headerlink" title="安装app影响的目录"></a>安装app影响的目录</h3><p>~/Library</p><p>~/Library/Application Support</p><p>~/Library/Application Support/CrashReporter</p><p>~/Library/Caches</p><p>~/Library/Containers</p><p>~/Library/LaunchAgents</p><p>~/Library/Preferences</p><p>~/Library/PreferencePanes</p><p>/Library<br>/Library/Application Support<br>/Library/Extensions<br>/Library/LaunchAgents<br>/Library/LaunchDaemons<br>/Library/PreferencePanes<br>/Library/Preferences  </p><p>一般来说/etc下一般是系统全局性的公共文件目录，而/usr/local/etc下一般指代用户级的公共文件目录。</p><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><ol><li><p>osx默认应用程序来源于store或store及信任的开发者，如需”所有来源”选项，则停用Gatekeeper。<br> <code>sudo spctl --master-disable</code><br> <code>sudo spctl --master-enable</code></p></li><li><p><code>sudo killall -HUP mDNSResponder</code> </p></li></ol><h3 id="LF-CRLF"><a href="#LF-CRLF" class="headerlink" title="LF, CRLF"></a>LF, CRLF</h3><p>##系统异常</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</span><br><span class="line">Error: Failure while executing: git config --local --replace-all homebrew.private true</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决方法：</span><br><span class="line">终端执行sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer命令，然后再输入一次系统的密码，完成。</span><br></pre></td></tr></table></figure><p>-</p><ol><li><p>安装iterm2</p><ul><li><a href="http://www.iterm2.com下载安装">www.iterm2.com下载安装</a></li><li><a href="http://iterm2colorschemes.com/">http://iterm2colorschemes.com/</a> 下载配色并导入。</li></ul></li><li><p>安装nvm</p><ul><li><a href="https://github.com/creationix/nvm下载安装">https://github.com/creationix/nvm下载安装</a></li><li>创建~/.bashrc文件(如果没有的话)</li><li>或直接<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</code></li><li>source ~/.bashrc</li></ul></li><li><p>用nvm安装nodejs</p><p> 每个版本下都得重新装一遍nodejs应用。</p></li><li><p>安装brew</p><p> <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code><br> 会自动装上command line tools for xcode</p></li><li><p>安装git</p><p> <code>brew install git</code></p></li><li><p>finder显示所有文件夹</p><p> <code>defaults write com.apple.finder AppleShowAllFiles -bool true;KillAll Finder</code></p></li><li><p>配置git，配色方案，命令行等</p></li></ol><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#load .bashrc</span><br><span class="line"><span class="keyword">if</span> [ -f ~<span class="regexp">/.bashrc ];then</span></span><br><span class="line"><span class="regexp"> . ~/</span>.bashrc</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">#git配置</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-completion.bash #自动补全</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-prompt.sh #分支信息</span><br><span class="line"><span class="keyword">export</span> GIT_PS1_SHOWDIRTYSTATE=<span class="number">1</span></span><br><span class="line">#带分支信息，多色提示符</span><br><span class="line"><span class="keyword">export</span> PS1=<span class="string">'\n\[\033[32m\]\u@\h\[\033[33m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[0m\]\n\$ '</span></span><br><span class="line"></span><br><span class="line">#终端配色方案</span><br><span class="line"><span class="keyword">if</span> brew list | grep coreutils &gt; <span class="regexp">/dev/</span><span class="literal">null</span> ; then</span><br><span class="line">  PATH=<span class="string">"$(brew --prefix coreutils)/libexec/gnubin:$PATH"</span></span><br><span class="line">  alias ls=<span class="string">'ls -F --show-control-chars --color=auto'</span></span><br><span class="line">  <span class="built_in">eval</span> <span class="string">`gdircolors -b $HOME/.dir_colors`</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></code></pre><ol start="8"><li><p>安装beyond compare 4 ,并配置到git </p><ul><li><p><code>rm &quot;/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat&quot;</code> 过期删除此文件</p></li><li><p>配置git</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[diff]</span><br><span class="line"> tool = bc</span><br><span class="line"> [difftool]</span><br><span class="line">     prompt = false</span><br><span class="line"> [difftool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br><span class="line"> [merge]</span><br><span class="line"> tool = bc</span><br><span class="line"> [mergetool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br></pre></td></tr></table></figure></li></ul></li></ol><ol start="8"><li><p>安装 adobe acrobat reader</p></li><li><p>安装 reeder 3 for mac(下载破解)</p></li><li><p>安装 switchhosts</p></li><li><p>安装 charles</p></li><li><p>安装 yarn</p><p><code>brew install yarn --without-node</code><br>如果安装不成功，可能是gz包下载失败(资源被重定向了)，解决:</p><ul><li><code>brew --cache</code>查看cache目录</li><li>手动下载定向后的包放在这个文件夹。</li><li>brew安装时会去cache里面找包名，找到后直接安装。</li></ul></li><li><p>安装 nginx <code>brew install nginx</code></p></li><li><p>安装工程环境（node)</p><ul><li>ykit</li></ul></li></ol><ol><li>aria2</li><li>alfred</li></ol><h3 id="install-shadowsocks-client"><a href="#install-shadowsocks-client" class="headerlink" title="install shadowsocks client"></a>install shadowsocks client</h3><p>-</p><p>which aria2c 可以看到可执行文件在哪个目录  </p><p>ls -la /usr/local/bin/aria2c 可以看到软连接指向哪个目录</p><p>brew 安装的软件都在/usr/local/Cellar 这个目录下</p><p>-</p><h2 id="mac-命令"><a href="#mac-命令" class="headerlink" title="mac 命令"></a>mac 命令</h2><ul><li><p><code>networksetup -listallhardwareports</code>    列出所有接口</p></li><li><p>open . #打开当前目录的finder</p><p> <code>open -a &lt;app&gt; &lt;filename&gt;</code>    用某程序打开某文件</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://jingyan.baidu.com/article/20095761ce2b4fcb062
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="Mac" scheme="1824437.github.io/tags/Mac/"/>
+    
+      <category term="OSX" scheme="1824437.github.io/tags/OSX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/mac%E5%88%B6linux%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
+    <id>1824437.github.io/os/mac制linux启动盘/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:18:04.181Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。</p><p>步骤如下：</p><p>1、在终端下，将ISO镜像转换为DMG格式：</p><p><code>$ hdiutil convert -format UDRW -o ~/linux.dmg /tmp/linux.iso</code></p><p>2、插入USB盘，然后在终端下，查找该盘的设备名：</p><p>$ diskutil list<br>/dev/disk0<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:      GUID_partition_scheme                        *121.3 GB  disk0<br>  1:                        EFI                        209.7 MB  disk0s1<br>  2:                  Apple_HFS Macintosh HD            120.5 GB  disk0s2<br>  3:                Apple_Boot Recovery HD            650.0 MB  disk0s3<br>/dev/disk1<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:    FDisk_partition_scheme                        *15.8 GB    disk1<br>  1:              Windows_NTFS wxy-u3                  15.8 GB    disk1s1</p><p>以上显示该盘的设备名是： /dev/disk1</p><p>也可以通过“磁盘工具”里面选择磁盘（不是分区），来查看其信息，获得设备名。</p><p>3、卸载USB盘（插入时已经自动挂载了），但是不要推出。在终端下：</p><p>$ diskutil umountDisk /dev/disk1<br>Unmount of all volumes on disk1 was successful</p><p>也可以通过“磁盘工具”进行卸载。</p><p>4、镜像上面生成的DMG内容到USB盘，在终端下：</p><p>$ sudo dd if=linux.dmg of=/dev/rdisk1 bs=1m<br>Password:<br>2151+1 records in<br>2151+1 records out<br>2256076800 bytes transferred in 90.277905 secs (24990354 bytes/sec)</p><p>此处要千万注意，指定的of别写错了，否则悔之晚矣。另外，of参数指定的设备名，可以用上面找到的/dev/disk1，也可以用/dev/rdisk1，此处的“r”据说会写入较快。</p><p>另外，如果报错：“dd: Invalid number `1m’”，可能是使用的不同版本的dd，可以换为bs=1M试试。</p><p>如果报错：“dd: /dev/diskN: Resource busy”，可能是上面的步骤中没有完成卸载USB盘。</p><p>5、推出USB盘。在上面复制之后，系统可能会报错，“此电脑不难读取能插入的磁盘”，不必理会，直接推出即可。也可以在终端下推出：</p><p>$ diskutil eject /dev/disk1</p><p>或者在“磁盘工具”里面推出。</p><p>使用该USB盘引导启动即可进行Linux的安装。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。&lt;/p&gt;
+&lt;p&gt;步骤如下：&lt;/p&gt;
+&lt;p&gt;1、在终端下，将ISO镜像转换为DMG格式：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ hdiutil convert -f
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="启动盘" scheme="1824437.github.io/tags/%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/shell_command/"/>
+    <id>1824437.github.io/os/shell_command/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:18:53.756Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><ol><li><p>常见缩写</p><ul><li>UID : 用户ID</li><li>EUID : 用于判断对系统资源的访问权限</li><li>GID : 用户所属组</li><li>PID : 进程</li><li>PPID : 父进程</li><li>PGID : 进程所属组</li></ul></li><li></li></ol><h2 id="命令大全"><a href="#命令大全" class="headerlink" title="命令大全"></a>命令大全</h2><h3 id="cp-xxd-sed-curl-ssh-keygen-lsof-ps-traceroute-chmod-tail"><a href="#cp-xxd-sed-curl-ssh-keygen-lsof-ps-traceroute-chmod-tail" class="headerlink" title="cp xxd sed curl ssh-keygen lsof ps traceroute chmod tail"></a><a href="#cp">cp</a> <a href="#xxd">xxd</a> <a href="#sed">sed</a> <a href="#crul">curl</a> <a href="#ssh-keygen">ssh-keygen</a> <a href="#lsof">lsof</a> <a href="#ps">ps</a> <a href="#traceroute">traceroute</a> <a href="#chmod">chmod</a> <a href="#tail">tail</a></h3><x id="cp"><h3 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h3><p>文本，目录复制</p><ul><li>参数<ul><li>-v 显示过程</li><li>-r 复制目录<br><code>cp ./wp ./wps -r</code><br>复制wp下的文件及子文件夹到 wps</li></ul></li></ul><x id="xed"><h3 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h3><p>在线编辑器</p><ul><li>参数<ul><li>-n 仅显示script后的结果<br>  <code>sed -n</code>  </li><li>l 列出不能打印字符的清单<br>  <code>sed l</code></li></ul></li></ul><x id="xxd"><h3 id="xxd"><a href="#xxd" class="headerlink" title="xxd"></a>xxd</h3><p>作为16进制的输出</p><ul><li>参数<ul><li>-b 用二进制显示<br><code>xxd -b</code></li></ul></li></ul><x id="crul"><h3 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h3><p>文件传输工具</p><ul><li><p>参数 </p><ul><li><p>-s / -silent 静音模式，不输出任何东西。<br>  <code>curl -s https://www.baidu.com | head -1</code><br>  只输出第一行。<br>  <code>curl -s https://www.baidu.com | head -1 | xxd</code><br>  用十六进制输出1行<br>  <code>curl -s https://www.baidu.com | head -1 | sed -n l</code><br>  输出1行，并输出不能打印的字符</p><p><code>curl &#39;&lt;url&gt;&#39; -H &#39;Accept: application/json&#39; -H &#39;Cookie: &lt;cookie&gt;&#39;</code><br>带cookie访问  </p></li></ul></li></ul><h3 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h3><x id="ssh-keygen"><h3 id="ssh-keygen"><a href="#ssh-keygen" class="headerlink" title="ssh-keygen"></a>ssh-keygen</h3><p>生成密钥。<br>免密登录：<br>    1. 可以生成公私钥。rsa , rsa.pub两个文件。<br>    2. 登录某台需免密的机器。将rsa.pub的文件内容粘贴到.ssh</p><x id="lsof">### lsof<p>用于查看你进程开打的文件，打开文件的进程，进程打开的端口(TCP、UDP)。找回/恢复删除的文件</p><ul><li><p>-c <process name> 指定进程名</p></li><li><p>-p <pid> 指定进程名</p></li><li><p>-i <condition> 指定条件</p><p> <code>lsof -i 4</code>  查询使用第4版ip协议的进程<br> <code>lsof -i :80</code>  查询监听80端口的进程<br> <code>lsof -i @127.0.0.1</code> 查询监听本机的进程<br> <code>lsof -i tcp</code> 查询使用tcp协议的进程</p></li></ul><x id="ps">### ps <p> 有时候系统管理员可能只关心现在系统中运行着哪些程序，而不想知道有哪些进程在运行。由于一个应用程序可能需要启动多个进程。所以在同等情况下，进程的数 量要比程序多的多。为此从阅读方面考虑，管理员需要知道系统中运行的具体程序。要实现这个需求的话，就需要利用命令ps来帮忙。<br>要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多 的资源等等。总之大部分信息都是可以通过执行该命令得到的。</p><p><strong>ps可显示的所有字段</strong></p><p><code>ps -o &quot;user,pid,args,rss&quot;</code></p><ul><li>user 用户名</li><li>uid 用户号</li><li>pid 进程号</li><li>ppid 父进程号</li><li>size 内存大小, Kbytes字节.</li><li>vsize 总虚拟内存大小, bytes字节(包含code+data+stack)</li><li>share 总共享页数</li><li>nice 进程优先级(缺省为0, 最大为-20)</li><li>priority(pri) 内核调度优先级</li><li>pmem 进程分享的物理内存数的百分比</li><li>pcpu 占用的cpu百分比</li><li>trs 程序执行代码驻留大小</li><li>rss 进程使用的总物理内存数, Kbytes字节</li><li>time 进程执行起到现在总的CPU暂用时间</li><li>stat 进程状态</li><li>cmd(args) 执行命令的简单格式</li></ul><p>-</p><ul><li><p>查看 所有的进程</p><p>  <code>ps -A</code></p></li><li><p>查看指定用户的进程</p><p>  <code>ps -u root</code></p></li></ul><p>主要应用<br><code>ps aux</code> 列表所有程序及进程</p><x id="nslookup">### nslookup 查服务器名`nslookup 10.86.44.130`<x id="tail">### tailtail命令用于输入文件中的尾部内容。<ul><li>-c <em>num</em> 指定尾部多少行</li><li>-f/–follow 显示文件追加的内容</li></ul><p><code>tail -f /tmp/access.log</code> 查看日志，并监控文件尾部增加 </p><x id="echo">### echo<p>参数含义<br>显示方式    意义<br>0    终端默认设置<br>1    高亮显示<br>4    使用下划线<br>5    闪烁<br>7    反白显示<br>8    不可见<br>前景色    背景色    颜色<br>30    40    黑色<br>31    41    红色<br>32    42    绿色<br>33    43    黃色<br>34    44    蓝色<br>35    45    紫红色<br>36    46    青蓝色<br>37    47    白色</p><ul><li>要打彩色注意与串中间加空格。<br><code>echo -e &quot;\033[4;40;37m 黑底白字 \033[0m&quot;</code></li></ul><x id="scp">### scp <p>linux之间复制文件</p><p><code>scp tao.zhu@192.168.237.21:~/a/temp.json ~</code></p><ul><li><p>-r 递归复制整个目录</p><p>  <code>scp -r l-rtools1.ops.cn5:~/a ~/.ssh</code> 将cn5主机下<del>/a文件夹递归复现到本机的</del>/.ssh文件夹下</p></li></ul><x id="traceroute">### traceroute<p>查看数据包到主机的路径</p><x id="chmod">### chmod 权限操作命令<p>权限基础<br><img src="_source/chmod1.png" alt=""><br>第一列，权限列 ，10-12个字符组成</p><p>第1个字符：文件类型，字符含义：</p><p><img src="_source/chmod2.png" alt=""></p><p>第2-4（文件所有者）<br>5-7（文件所有者所在的组）<br>8-10（其它人）的权限；<br>三个权限字符分别代表读取，写入，执行权限。<br>权限代号表  </p><table><thead><tr><th>类型</th><th>字母</th><th>数字</th></tr></thead><tbody><tr><td>读取</td><td>r</td><td>4</td></tr><tr><td>写入</td><td>w</td><td>2</td></tr><tr><td>执行</td><td>x</td><td>1</td></tr><tr><td>无权</td><td>-</td><td>0</td></tr><tr><td>还有s,当文件被执行时，根据who参数指定的用户类型设置文件的setuid或者setgid权限。（待理解）</td><td></td><td></td></tr></tbody></table><p>如一个文件，所有者有3权，其组有读权，其他人无权，应该显示<br>-rwxr–r–</p><p>第11个字符表示acl和selinux属性<br>第12个字符是个结尾符</p><h3 id="查看文件夹占用的磁盘空间"><a href="#查看文件夹占用的磁盘空间" class="headerlink" title="查看文件夹占用的磁盘空间"></a>查看文件夹占用的磁盘空间</h3><p><code>du -sh</code></p><h3 id="adduser-useradd-创建用户"><a href="#adduser-useradd-创建用户" class="headerlink" title="adduser/useradd 创建用户"></a>adduser/useradd 创建用户</h3><p><a href="http://www.cnblogs.com/the-tops/p/5632828.html">infos</a></p><h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>mv 文件改名</p><h3 id="删除用户x"><a href="#删除用户x" class="headerlink" title="删除用户x"></a>删除用户x</h3><ol><li><code>user del x</code></li><li><code>rm -rf /home/x</code></li><li><code>rm -rf /var/spool/mail/x</code></li></ol><h3 id="查看系统信息"><a href="#查看系统信息" class="headerlink" title="查看系统信息"></a>查看系统信息</h3><pre><code>`rpm -qi centos-release`</code></pre><h3 id="常用检测进程命令"><a href="#常用检测进程命令" class="headerlink" title="常用检测进程命令"></a>常用检测进程命令</h3><p>1.先使用ps -e | grep nginx查看是否已经启动了nginx</p><p>2.如果没有的话则按照提示，查看0.0.0.0:80端口谁占用了，使用netstat -ltunp命令</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;常见缩写&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;UID : 用户ID&lt;/li&gt;
+&lt;li&gt;EUID : 用于判断对系统资
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="shell" scheme="1824437.github.io/tags/shell/"/>
+    
+  </entry>
+  
 </feed>

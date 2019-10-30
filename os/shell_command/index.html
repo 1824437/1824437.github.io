@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title> CentOS学习 · 经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CentOS学习 - ZhuTao&lt;zhutao@live.cn&gt;"><meta name="keywords" content="Javascript Typescript CSS Sass Vue React MVVM"><meta name="author" content="ZhuTao&lt;zhutao@live.cn&gt;"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="1824437.github.io/atom.xml" title="经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱"><meta name="generator" content="Hexo 4.0.0"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul id="nav_list" class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="首页" class="nav-list-link">首页</a></li><li class="nav-list-item"><a href="/categories/web/" target="_self" data-hover="WEB" class="nav-list-link">WEB</a></li><li class="nav-list-item"><a href="/categories/frame/" target="_self" data-hover="框架" class="nav-list-link">框架</a></li><li class="nav-list-item"><a href="/categories/browser/" target="_self" data-hover="浏览器" class="nav-list-link">浏览器</a></li><li class="nav-list-item"><a href="/categories/editor/" target="_self" data-hover="编辑器" class="nav-list-link">编辑器</a></li><li class="nav-list-item"><a href="/categories/standard/" target="_self" data-hover="标准" class="nav-list-link">标准</a></li><li class="nav-list-item"><a href="/categories/popular/" target="_self" data-hover="流行" class="nav-list-link">流行</a></li><li class="nav-list-item"><a href="/categories/compiler/" target="_self" data-hover="编译" class="nav-list-link">编译</a></li><li class="nav-list-item"><a href="/categories/test/" target="_self" data-hover="测试" class="nav-list-link">测试</a></li><li class="nav-list-item"><a href="/categories/os/" target="_self" data-hover="OS" class="nav-list-link">OS</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div><div id="nav_btn" class="nav-btn"><span></span><span></span><span></span></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">CentOS学习</h1><div class="post-info">2019-05-09<p class="visit"></p></div><div class="post-content"><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><ol>
+<li><p>常见缩写</p>
+<ul>
+<li>UID : 用户ID</li>
+<li>EUID : 用于判断对系统资源的访问权限</li>
+<li>GID : 用户所属组</li>
+<li>PID : 进程</li>
+<li>PPID : 父进程</li>
+<li>PGID : 进程所属组</li>
+</ul>
+</li>
+<li></li>
+</ol>
+<h2 id="命令大全"><a href="#命令大全" class="headerlink" title="命令大全"></a>命令大全</h2><h3 id="cp-xxd-sed-curl-ssh-keygen-lsof-ps-traceroute-chmod-tail"><a href="#cp-xxd-sed-curl-ssh-keygen-lsof-ps-traceroute-chmod-tail" class="headerlink" title="cp xxd sed curl ssh-keygen lsof ps traceroute chmod tail"></a><a href="#cp">cp</a> <a href="#xxd">xxd</a> <a href="#sed">sed</a> <a href="#crul">curl</a> <a href="#ssh-keygen">ssh-keygen</a> <a href="#lsof">lsof</a> <a href="#ps">ps</a> <a href="#traceroute">traceroute</a> <a href="#chmod">chmod</a> <a href="#tail">tail</a></h3><x id="cp">
+
+<h3 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h3><p>文本，目录复制</p>
+<ul>
+<li>参数<ul>
+<li>-v 显示过程</li>
+<li>-r 复制目录<br><code>cp ./wp ./wps -r</code><br>复制wp下的文件及子文件夹到 wps</li>
+</ul>
+</li>
+</ul>
+<x id="xed">
+
+<h3 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h3><p>在线编辑器</p>
+<ul>
+<li>参数<ul>
+<li>-n 仅显示script后的结果<br>  <code>sed -n</code>  </li>
+<li>l 列出不能打印字符的清单<br>  <code>sed l</code></li>
+</ul>
+</li>
+</ul>
+<x id="xxd">
+
+<h3 id="xxd"><a href="#xxd" class="headerlink" title="xxd"></a>xxd</h3><p>作为16进制的输出</p>
+<ul>
+<li>参数<ul>
+<li>-b 用二进制显示<br><code>xxd -b</code></li>
+</ul>
+</li>
+</ul>
+<x id="crul">
+
+<h3 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h3><p>文件传输工具</p>
+<ul>
+<li><p>参数 </p>
+<ul>
+<li><p>-s / -silent 静音模式，不输出任何东西。<br>  <code>curl -s https://www.baidu.com | head -1</code><br>  只输出第一行。<br>  <code>curl -s https://www.baidu.com | head -1 | xxd</code><br>  用十六进制输出1行<br>  <code>curl -s https://www.baidu.com | head -1 | sed -n l</code><br>  输出1行，并输出不能打印的字符</p>
+<p><code>curl &#39;&lt;url&gt;&#39; -H &#39;Accept: application/json&#39; -H &#39;Cookie: &lt;cookie&gt;&#39;</code><br>带cookie访问  </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h3><x id="ssh-keygen">
+
+
+<h3 id="ssh-keygen"><a href="#ssh-keygen" class="headerlink" title="ssh-keygen"></a>ssh-keygen</h3><p>生成密钥。<br>免密登录：<br>    1. 可以生成公私钥。rsa , rsa.pub两个文件。<br>    2. 登录某台需免密的机器。将rsa.pub的文件内容粘贴到.ssh</p>
+<x id="lsof">
+### lsof
+
+<p>用于查看你进程开打的文件，打开文件的进程，进程打开的端口(TCP、UDP)。找回/恢复删除的文件</p>
+<ul>
+<li><p>-c <process name> 指定进程名</p>
+</li>
+<li><p>-p <pid> 指定进程名</p>
+</li>
+<li><p>-i <condition> 指定条件</p>
+<p> <code>lsof -i 4</code>  查询使用第4版ip协议的进程<br> <code>lsof -i :80</code>  查询监听80端口的进程<br> <code>lsof -i @127.0.0.1</code> 查询监听本机的进程<br> <code>lsof -i tcp</code> 查询使用tcp协议的进程</p>
+</li>
+</ul>
+<x id="ps">
+### ps 
+
+<p> 有时候系统管理员可能只关心现在系统中运行着哪些程序，而不想知道有哪些进程在运行。由于一个应用程序可能需要启动多个进程。所以在同等情况下，进程的数 量要比程序多的多。为此从阅读方面考虑，管理员需要知道系统中运行的具体程序。要实现这个需求的话，就需要利用命令ps来帮忙。<br>要对进程进行监测和控制，首先必须要了解当前进程的情况，也就是需要查看当前进程，而 ps 命令就是最基本同时也是非常强大的进程查看命令。使用该命令可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了过多 的资源等等。总之大部分信息都是可以通过执行该命令得到的。</p>
+<p><strong>ps可显示的所有字段</strong></p>
+<p><code>ps -o &quot;user,pid,args,rss&quot;</code></p>
+<ul>
+<li>user 用户名</li>
+<li>uid 用户号</li>
+<li>pid 进程号</li>
+<li>ppid 父进程号</li>
+<li>size 内存大小, Kbytes字节.</li>
+<li>vsize 总虚拟内存大小, bytes字节(包含code+data+stack)</li>
+<li>share 总共享页数</li>
+<li>nice 进程优先级(缺省为0, 最大为-20)</li>
+<li>priority(pri) 内核调度优先级</li>
+<li>pmem 进程分享的物理内存数的百分比</li>
+<li>pcpu 占用的cpu百分比</li>
+<li>trs 程序执行代码驻留大小</li>
+<li>rss 进程使用的总物理内存数, Kbytes字节</li>
+<li>time 进程执行起到现在总的CPU暂用时间</li>
+<li>stat 进程状态</li>
+<li>cmd(args) 执行命令的简单格式</li>
+</ul>
+<p>-</p>
+<ul>
+<li><p>查看 所有的进程</p>
+<p>  <code>ps -A</code></p>
+</li>
+<li><p>查看指定用户的进程</p>
+<p>  <code>ps -u root</code></p>
+</li>
+</ul>
+<p>主要应用<br><code>ps aux</code> 列表所有程序及进程</p>
+<x id="nslookup">
+### nslookup 
+查服务器名
+`nslookup 10.86.44.130`
+
+<x id="tail">
+### tail
+tail命令用于输入文件中的尾部内容。
+
+<ul>
+<li>-c <em>num</em> 指定尾部多少行</li>
+<li>-f/–follow 显示文件追加的内容</li>
+</ul>
+<p><code>tail -f /tmp/access.log</code> 查看日志，并监控文件尾部增加 </p>
+<x id="echo">
+### echo
+
+<p>参数含义<br>显示方式    意义<br>0    终端默认设置<br>1    高亮显示<br>4    使用下划线<br>5    闪烁<br>7    反白显示<br>8    不可见<br>前景色    背景色    颜色<br>30    40    黑色<br>31    41    红色<br>32    42    绿色<br>33    43    黃色<br>34    44    蓝色<br>35    45    紫红色<br>36    46    青蓝色<br>37    47    白色</p>
+<ul>
+<li>要打彩色注意与串中间加空格。<br><code>echo -e &quot;\033[4;40;37m 黑底白字 \033[0m&quot;</code></li>
+</ul>
+<x id="scp">
+### scp 
+
+<p>linux之间复制文件</p>
+<p><code>scp tao.zhu@192.168.237.21:~/a/temp.json ~</code></p>
+<ul>
+<li><p>-r 递归复制整个目录</p>
+<p>  <code>scp -r l-rtools1.ops.cn5:~/a ~/.ssh</code> 将cn5主机下<del>/a文件夹递归复现到本机的</del>/.ssh文件夹下</p>
+</li>
+</ul>
+<x id="traceroute">
+### traceroute
+
+<p>查看数据包到主机的路径</p>
+<x id="chmod">
+### chmod 权限操作命令
+
+<p>权限基础<br><img src="_source/chmod1.png" alt=""><br>第一列，权限列 ，10-12个字符组成</p>
+<p>第1个字符：文件类型，字符含义：</p>
+<p><img src="_source/chmod2.png" alt=""></p>
+<p>第2-4（文件所有者）<br>5-7（文件所有者所在的组）<br>8-10（其它人）的权限；<br>三个权限字符分别代表读取，写入，执行权限。<br>权限代号表  </p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>字母</th>
+<th>数字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读取</td>
+<td>r</td>
+<td>4</td>
+</tr>
+<tr>
+<td>写入</td>
+<td>w</td>
+<td>2</td>
+</tr>
+<tr>
+<td>执行</td>
+<td>x</td>
+<td>1</td>
+</tr>
+<tr>
+<td>无权</td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td>还有s,当文件被执行时，根据who参数指定的用户类型设置文件的setuid或者setgid权限。（待理解）</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>如一个文件，所有者有3权，其组有读权，其他人无权，应该显示<br>-rwxr–r–</p>
+<p>第11个字符表示acl和selinux属性<br>第12个字符是个结尾符</p>
+<h3 id="查看文件夹占用的磁盘空间"><a href="#查看文件夹占用的磁盘空间" class="headerlink" title="查看文件夹占用的磁盘空间"></a>查看文件夹占用的磁盘空间</h3><p><code>du -sh</code></p>
+<h3 id="adduser-useradd-创建用户"><a href="#adduser-useradd-创建用户" class="headerlink" title="adduser/useradd 创建用户"></a>adduser/useradd 创建用户</h3><p><a href="http://www.cnblogs.com/the-tops/p/5632828.html">infos</a></p>
+<h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>mv 文件改名</p>
+<h3 id="删除用户x"><a href="#删除用户x" class="headerlink" title="删除用户x"></a>删除用户x</h3><ol>
+<li><code>user del x</code></li>
+<li><code>rm -rf /home/x</code></li>
+<li><code>rm -rf /var/spool/mail/x</code></li>
+</ol>
+<h3 id="查看系统信息"><a href="#查看系统信息" class="headerlink" title="查看系统信息"></a>查看系统信息</h3><pre><code>`rpm -qi centos-release`</code></pre><h3 id="常用检测进程命令"><a href="#常用检测进程命令" class="headerlink" title="常用检测进程命令"></a>常用检测进程命令</h3><p>1.先使用ps -e | grep nginx查看是否已经启动了nginx</p>
+<p>2.如果没有的话则按照提示，查看0.0.0.0:80端口谁占用了，使用netstat -ltunp命令</p>
+</div></article></div><div class="right-container"><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/os/mac%E5%88%B6linux%E5%90%AF%E5%8A%A8%E7%9B%98/" title="CentOS学习" class="prev">PREV</a></div><div class="copyright"><p>© 2016 - 2019 <a target="_blank">ZhuTao<zhutao@live.cn></a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p> <span style="padding-right: 6px;">闽ICP备16007301号-2</span></p></div><div class="totop"><i></i></div></div></footer><script src="/scripts/jquery-1.8.2.min.js"></script><script src="/scripts/ar-anchor.js"></script><script src="/scripts/main.js"></script></body></html>

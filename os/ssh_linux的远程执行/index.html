@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="baidu-site-verification" content="1EB8XoOl0C"><meta name="google-site-verification" content="K7thEgdLm0UfRWJ5MGdF7sCcjClSzAlxFLPv2Oz5CGM"><title> CentOS学习 · 经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="CentOS学习 - ZhuTao&lt;zhutao@live.cn&gt;"><meta name="keywords" content="Javascript Typescript CSS Sass Vue React MVVM"><meta name="author" content="ZhuTao&lt;zhutao@live.cn&gt;"><link rel="short icon" href="/images/favicon.ico"><link rel="stylesheet" href="/css/bubuzou.css"><link rel="search" type="application/opensearchdescription+xml" href="1824437.github.io/atom.xml" title="经历过浏览器标准之乱，又TM正在经历终端之乱及所带来的框架之乱"><meta name="generator" content="Hexo 4.0.0"></head><body><header><div class="header row"> <a href="/" class="logo-link"><img src="/images/logo.png"></a><ul id="nav_list" class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" data-hover="首页" class="nav-list-link">首页</a></li><li class="nav-list-item"><a href="/categories/web/" target="_self" data-hover="WEB" class="nav-list-link">WEB</a></li><li class="nav-list-item"><a href="/categories/frame/" target="_self" data-hover="框架" class="nav-list-link">框架</a></li><li class="nav-list-item"><a href="/categories/browser/" target="_self" data-hover="浏览器" class="nav-list-link">浏览器</a></li><li class="nav-list-item"><a href="/categories/editor/" target="_self" data-hover="编辑器" class="nav-list-link">编辑器</a></li><li class="nav-list-item"><a href="/categories/standard/" target="_self" data-hover="标准" class="nav-list-link">标准</a></li><li class="nav-list-item"><a href="/categories/popular/" target="_self" data-hover="流行" class="nav-list-link">流行</a></li><li class="nav-list-item"><a href="/categories/compiler/" target="_self" data-hover="编译" class="nav-list-link">编译</a></li><li class="nav-list-item"><a href="/categories/test/" target="_self" data-hover="测试" class="nav-list-link">测试</a></li><li class="nav-list-item"><a href="/categories/os/" target="_self" data-hover="OS" class="nav-list-link">OS</a></li></ul><div class="search"><a id="search_btn" href="#search"></a></div><div id="nav_btn" class="nav-btn"><span></span><span></span><span></span></div></div></header><div class="row scroll-con"><section class="container"><!-- for archive page--><div id="postAr" class="post"><article class="post-block"><h1 class="post-title">CentOS学习</h1><div class="post-info">2019-05-09<p class="visit"></p></div><div class="post-content"><p>references</p>
+<p>完整的server/client配置实践<a href="./git服务部署.md">git服务部署</a></p>
+<p><strong>相关命令</strong></p>
+<p>###ssh  </p>
+<p>用法<a href="http://blog.csdn.net/pipisorry/article/details/52269785">http://blog.csdn.net/pipisorry/article/details/52269785</a></p>
+<p><code>ssh -V</code> 查看ssh版本 </p>
+<ul>
+<li>默认端口: 22</li>
+</ul>
+<p>ssh-keygen</p>
+<p>-</p>
+<h3 id="公钥、私钥"><a href="#公钥、私钥" class="headerlink" title="公钥、私钥"></a>公钥、私钥</h3><p><strong>资料</strong></p>
+<p>数据公钥加密和认证中的私钥公钥<a href="http://www.williamlong.info/archives/837.html">http://www.williamlong.info/archives/837.html</a><br>使用ssh-keygen设置SSH无密码登录<a href="http://blog.csdn.net/leexide/article/details/17252369">http://blog.csdn.net/leexide/article/details/17252369</a><br>Linux ssh服务开启秘钥和密码认证<a href="https://www.cnblogs.com/xiaochina/p/6867298.html">https://www.cnblogs.com/xiaochina/p/6867298.html</a></p>
+<p><strong>公钥,私钥是怎么实现不对称加密的?</strong></p>
+<ol>
+<li>私钥是绝对保密的,私钥用来进行解密和签名, 是给自己用的</li>
+<li>公钥由本人公开，用于加密和验证签名，是给别人用的。</li>
+<li>当该用户发送文件时，用私钥签名，别人用他给的公钥验证签名，可以保证该信息是由他发送的。当该用户接受文件时，别人用他的公钥加密，他用私钥解密，可以保证该信息只能由他接收到。</li>
+</ol>
+<p><strong>安全性</strong></p>
+<p>目前能破解的RSA算法密钥是768个二进制位. 超过此长度的破解无人公开公布过。一般认为1024的密钥基本安全, 2048位的密码极其安全。</p>
+<p><strong>生成公钥,私钥</strong></p>
+<p>ssh-keygen</p>
+<ul>
+<li><p>-t <em>type</em> </p>
+<p>  指定要创建的密钥类型。可以使用：”rsa1”(SSH-1) “rsa”(SSH-2) “dsa”(SSH-2)</p>
+</li>
+<li><p>-p</p>
+<p>  要求改变某私钥文件的密语而不重建私钥。程序将提示输入私钥文件名、原来的密语、以及两次输入新密语。</p>
+</li>
+</ul>
+<p><code>ssh-keygen -t rsa</code> 生成本机的公私钥</p>
+<p><strong>.ssh目录及文件</strong></p>
+<ol>
+<li><p>known_hosts文件</p>
+<p> 记录访问过的主机的公钥</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">192.168.237.72 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAppBeLNHwpSlWGtLMeW0SpJ0TQs8qyHWxyBxh1JM8b9mJgvsRj8/xUDjcDgC59xXQkeX37Hp4DtlWz4bwkR4im5WLQ3QVj0YSw/1WrB/x/TNhHWvFMP8IXi18ZfTuCtBTufZZzt0ZPFkbioKVf4hg3ukEXIhxYlRaByhb/2U22rBdImGAkq6tV7ZPvemfcTtrU+QLv61+mQoDOkbobOvbgSPlU3eH4CWED4bQ5C3oIlpGFLSjcYnslHwnCzFUsh1d/YH4Jpt6lX5kPzZFSRQVjqI8ucrLVhsQvtERKOzjQh3i611WbZB8Rn7dUS2jIWk5egUQPJ+bhDbGd9DqZ1th3Q==</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>客户端配置文件</p>
+<ul>
+<li><p>/etc/ssh_config 全局配置</p>
+</li>
+<li><p>.ssh/config 本地配置</p>
+<p>本地配置优先级高于全局配置 </p>
+</li>
+</ul>
+<p> <strong>配置项</strong></p>
+<ul>
+<li><p>Host  主机配置（也是分段标志,接下了的配置就是和这个主机配置相关的，直到碰到另一个Host)</p>
+<p>  <code>Host &lt;string&gt;</code><br>  <code>Host www.x.cn</code> domain<br>  <code>Host 123.123.123.123</code>ip<br>  <code>Host 123.123.*</code> 通配符<br>  <code>Host dev1</code> 别名<br>  <code>HostName www.x.cn</code><br>  <code>port 27155</code><br>  <code>User git</code>  </p>
+</li>
+<li><p>IdentityFile 用户身份标识</p>
+<p>  <code>IdentifyFile &lt;private key file&gt;</code></p>
+<p>  command mode: <code>ssh -i ~/.ssh/id_rsa 10.86.211.11</code>用私钥登录</p>
+</li>
+</ul>
+</li>
+</ol>
+<pre><code>+ ProxyCommand 
+
+    看不太懂，link先记下
+    [SSH ProxyCommand 实践 ](https://www.cnblogs.com/shanpow/p/4264867.html)
+
+配置详情参阅:《SSH权威指南》客户端的配置(page 280)
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># generated by qzz-copy-id</span><br><span class="line">Host *</span><br><span class="line">    User tao.zhu</span><br><span class="line"></span><br><span class="line">Host *</span><br><span class="line">User tao.zhu</span><br><span class="line">ServerAliveInterval 30</span><br><span class="line">ControlMaster auto</span><br><span class="line">ControlPath ~/.ssh/persist/master-%r@%h:%p</span><br><span class="line">ControlPersist yes</span><br></pre></td></tr></table></figure></code></pre><ol start="3">
+<li><p>authorized_keys 文件</p>
+<p> 服务器保存客户机的公钥。<br> 把自己的公钥放在服务器上的.ssh/authorized_keys文件内后，可直接ssh</p>
+</li>
+<li><p>/etc/ssh/moduli</p>
+</li>
+<li><p>/etc/ssh/ssh_config  存放作为客户端的一些ssh配置</p>
+</li>
+<li><p>etc/ssh/sshd_config 存放作为服务器端的一些ssh配置  </p>
+</li>
+</ol>
+<h4 id="重新生成公钥后要干的事"><a href="#重新生成公钥后要干的事" class="headerlink" title="重新生成公钥后要干的事"></a>重新生成公钥后要干的事</h4><p>git SSH keys 重新设置<br>ssh 免登录主机重新设置</p>
+<p><strong>注意 注意 注意</strong><br><strong>设置免密登录时，必须要保证被登录服务器用户的.ssh文件夹及下的authorized_keys文件除本用户的其它用户无写权限，否则免密登录不生效</strong><br><strong>还要密切注意服务器上/etc/ssh/sshd_config的下列字段必须打开</strong></p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RSAAuthentication yes</span><br><span class="line">PubkeyAuthentication yes</span><br><span class="line">AuthorizedKeysFile	.ssh/authorized_keys</span><br></pre></td></tr></table></figure></code></pre><blockquote>
+<p><a href="https://www.cnblogs.com/snowbook/p/5671406.html">引用网文</a><br>后来，我详细查了一下，如果authorized_keys文件、$HOME/.ssh目录 或 $HOME目录让本用户之外的用户有写权限，那么sshd都会拒绝使用 ~/.ssh/authorized_keys 文件中的key来进行认证的。</p>
+</blockquote>
+</div></article></div><div class="right-container"><div class="widget"><div id="arAnchorBar"></div></div></div></section></div><div class="right-menu"></div><div class="modal search-modal"><div class="input-field"><input type="text" id="search_input"><label for="search-input">搜索</label></div><div id="search_result" class="search-result"></div></div><div class="blog-overlay"></div><footer class="row"><div class="footer-con"><div class="paginator"><a href="/os/shell%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/" title="CentOS学习" class="prev">PREV</a><a href="/os/centos%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6/" title="CentOS学习" class="next">NEXT</a></div><div class="copyright"><p>© 2016 - 2019 <a target="_blank">ZhuTao<zhutao@live.cn></a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <br> and <a href="https://github.com/Bulandent/hexo-theme-bubuzou" target="_blank">hexo-theme-bubuzou</a></p><p> <span style="padding-right: 6px;">闽ICP备16007301号-2</span></p></div><div class="totop"><i></i></div></div></footer><script src="/scripts/jquery-1.8.2.min.js"></script><script src="/scripts/ar-anchor.js"></script><script src="/scripts/main.js"></script></body></html>
