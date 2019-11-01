@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-10-29T06:27:39.978Z</updated>
+  <updated>2019-11-01T02:57:43.537Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flex</title>
+    <link href="1824437.github.io/web/css/flex/"/>
+    <id>1824437.github.io/web/css/flex/</id>
+    <published>2019-11-01T02:57:06.699Z</published>
+    <updated>2019-11-01T02:57:43.537Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="容器与项目（容器成员）"><a href="#容器与项目（容器成员）" class="headerlink" title="容器与项目（容器成员）"></a>容器与项目（容器成员）</h2><h3 id="flex-容器"><a href="#flex-容器" class="headerlink" title="flex 容器"></a>flex 容器</h3><p>设置为flex容器： <code>display:flex;</code></p><p><strong>属性</strong></p><ol><li><p>flex-direction 主轴方向</p><ul><li>row</li><li>row-reverse</li><li>column</li><li>column-reverse</li></ul></li></ol><ol start="2"><li><p>flex-warp 发生换行时的堆叠方向</p><ul><li>nowarp 不换行，会挤压item主轴方向</li><li>warp 换行，不会挤压item主辆方向，而是挤压交叉轴。</li><li>warp-reverse,同上，从下往上排。</li></ul></li><li><p>flex-flow flex-direction及flex-warp的缩写。</p><p> <flex-direction> <flex-warp>|initial|inherit</p></li><li><p>justify-content 主轴对齐方向</p><ul><li>flex-start</li><li>flex-end</li><li>center</li><li>space-between 平散对齐</li><li>space-around 每侧相隔相等</li></ul></li></ol><ol start="5"><li><p>align-items 交叉轴对齐方式</p><ul><li>flex-start</li><li>flex-end</li><li>center</li><li>baseline</li><li>stretch</li></ul></li><li><p>align-content</p></li></ol><h3 id="flex容器内的元素则为flex项目。"><a href="#flex容器内的元素则为flex项目。" class="headerlink" title="flex容器内的元素则为flex项目。"></a>flex容器内的元素则为flex项目。</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;容器与项目（容器成员）&quot;&gt;&lt;a href=&quot;#容器与项目（容器成员）&quot; class=&quot;headerlink&quot; title=&quot;容器与项目（容器成员）&quot;&gt;&lt;/a&gt;容器与项目（容器成员）&lt;/h2&gt;&lt;h3 id=&quot;flex-容器&quot;&gt;&lt;a href=&quot;#flex-容器&quot; c
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="1824437.github.io/categories/web/"/>
+    
+    
+      <category term="css" scheme="1824437.github.io/tags/css/"/>
+    
+      <category term="flex" scheme="1824437.github.io/tags/flex/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS学习</title>
@@ -163,30 +191,17 @@
   </entry>
   
   <entry>
-    <title>css3</title>
+    <title>web/css3/css3</title>
     <link href="1824437.github.io/web/css3/css3/"/>
     <id>1824437.github.io/web/css3/css3/</id>
     <published>2019-10-27T10:47:26.133Z</published>
-    <updated>2019-10-27T10:48:15.820Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="容器与项目（容器成员）"><a href="#容器与项目（容器成员）" class="headerlink" title="容器与项目（容器成员）"></a>容器与项目（容器成员）</h2><h3 id="flex-容器"><a href="#flex-容器" class="headerlink" title="flex 容器"></a>flex 容器</h3><p>设置为flex容器： <code>display:flex;</code></p><p><strong>属性</strong></p><ol><li>flex-direction</li><li>flex-warp</li><li>flex-flow</li><li>justify-content</li><li>align-items</li><li>align-content</li></ol><h3 id="flex容器内的元素则为flex项目。"><a href="#flex容器内的元素则为flex项目。" class="headerlink" title="flex容器内的元素则为flex项目。"></a>flex容器内的元素则为flex项目。</h3>]]></content>
+    <updated>2019-11-01T02:56:34.637Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;容器与项目（容器成员）&quot;&gt;&lt;a href=&quot;#容器与项目（容器成员）&quot; class=&quot;headerlink&quot; title=&quot;容器与项目（容器成员）&quot;&gt;&lt;/a&gt;容器与项目（容器成员）&lt;/h2&gt;&lt;h3 id=&quot;flex-容器&quot;&gt;&lt;a href=&quot;#flex-容器&quot; c
-      
     
     </summary>
     
     
-      <category term="web" scheme="1824437.github.io/categories/web/"/>
-    
-    
-      <category term="css3" scheme="1824437.github.io/tags/css3/"/>
-    
-      <category term="flex" scheme="1824437.github.io/tags/flex/"/>
     
   </entry>
   
@@ -330,9 +345,9 @@
       <category term="web" scheme="1824437.github.io/categories/web/"/>
     
     
-      <category term="sass" scheme="1824437.github.io/tags/sass/"/>
-    
       <category term="css" scheme="1824437.github.io/tags/css/"/>
+    
+      <category term="sass" scheme="1824437.github.io/tags/sass/"/>
     
   </entry>
   
@@ -447,34 +462,6 @@
   
   <entry>
     <title>CentOS学习</title>
-    <link href="1824437.github.io/os/centos%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6/"/>
-    <id>1824437.github.io/os/centos同步文件/</id>
-    <published>2019-05-09T01:19:58.489Z</published>
-    <updated>2019-10-30T00:15:30.215Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="rsync"><a href="#rsync" class="headerlink" title="rsync"></a><a href="https://www.samba.org/ftp/rsync/rsync.html">rsync</a></h2><p><a href="http://www.cnblogs.com/f-ck-need-u/p/7221713.html">参数详解</a></p><h3 id="同步文件的模式"><a href="#同步文件的模式" class="headerlink" title="同步文件的模式"></a>同步文件的模式</h3><ol><li>检查模式</li><li>同步模式</li></ol><h3 id="工作方式-3种"><a href="#工作方式-3种" class="headerlink" title="工作方式 3种"></a>工作方式 3种</h3><h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><blockquote><p>同步是<strong>增量的! 增量的! 增量的！</strong>，即使<code>-R</code>在目标文件夹内创建文件夹也不会将已存在的同名文件夹内容清除</p></blockquote><p><strong>options</strong></p><ul><li><p><code>-r</code> 此选项告诉rsync以递归模式拷贝目录。</p><p>  不带r只能同步文件，如果不带r 同步目录则不会干活，提示<code>skipping directory .</code></p></li></ul><p><strong>eg</strong></p><blockquote><p>带和不带尾<code>/</code>是有区别的。 </p></blockquote><p><code>rsync -r ./from ./to</code> //这样写会把from 同步到to, to会生成一个from<br><code>rsync -r ./from/ ./to</code> //这样写会把from里的所有(file,directory)同步到to</p><p><strong>options</strong></p><ul><li><code>-R</code> 表示需要将源路径上的目录创建在目标文件夹内（所建文件夹的所有下级都会被增量复制)</li></ul><p><strong>eg</strong>  </p><p><code>rsync -R from/abc/a.txt /to</code> 同步a.txt，并创建from,abc文件夹。<br><strong>如果只复制路径的一部分则：用<code>.</code>隔开</strong><br><code>rsync -R from/./abc/a.txt /to</code> 同步a.txt, 并创建abc文件夹。</p><p><strong>options</strong></p><ul><li><p><code>--backup</code> 对目标文件夹内的<strong>相同的文件</strong>做备份</p><p>  备份默认使用<code>~</code>,可以使用<code>--suffix &lt;symbol&gt;</code><br>  <code>rsync -ri --backup --suffix=% from/ to</code><br>  也可以指定备份的路径，但路径必须存在.<code>--backup-dir=./to_back</code></p></li></ul><h4 id="不同主机同步"><a href="#不同主机同步" class="headerlink" title="不同主机同步"></a><strong>不同主机同步</strong></h4><p><strong>options</strong></p><ul><li><p><code>-e</code>指定所要使用的远程shell程序，默认为ssh</p><p>  <code>rsync -ir -e &quot;ssh -p 1080&quot; from/static t.z@138.128.197.152:~/static</code><br>  注意: 我的web root 是<code>/home/www/static</code>，但t.z没有w权限，所以先暂存到有权限的<code>~</code>下，然后在通过<code>sudo rsync -ri ~/static/ /home/www/static</code></p></li></ul><p><strong>options</strong></p><ul><li><code>--existing</code> 只更新目标端已存在的文件</li><li><code>--ignore-existing</code> 只更新目标端不存在的文件</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;rsync&quot;&gt;&lt;a href=&quot;#rsync&quot; class=&quot;headerlink&quot; title=&quot;rsync&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.samba.org/ftp/rsync/rsync.html&quot;&gt;rsync&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="os" scheme="1824437.github.io/categories/os/"/>
-    
-    
-      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
-    
-      <category term="rsync" scheme="1824437.github.io/tags/rsync/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS学习</title>
     <link href="1824437.github.io/os/mac/"/>
     <id>1824437.github.io/os/mac/</id>
     <published>2019-05-09T01:19:58.489Z</published>
@@ -498,6 +485,34 @@
       <category term="Mac" scheme="1824437.github.io/tags/Mac/"/>
     
       <category term="OSX" scheme="1824437.github.io/tags/OSX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/centos%E5%90%8C%E6%AD%A5%E6%96%87%E4%BB%B6/"/>
+    <id>1824437.github.io/os/centos同步文件/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:15:30.215Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="rsync"><a href="#rsync" class="headerlink" title="rsync"></a><a href="https://www.samba.org/ftp/rsync/rsync.html">rsync</a></h2><p><a href="http://www.cnblogs.com/f-ck-need-u/p/7221713.html">参数详解</a></p><h3 id="同步文件的模式"><a href="#同步文件的模式" class="headerlink" title="同步文件的模式"></a>同步文件的模式</h3><ol><li>检查模式</li><li>同步模式</li></ol><h3 id="工作方式-3种"><a href="#工作方式-3种" class="headerlink" title="工作方式 3种"></a>工作方式 3种</h3><h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><blockquote><p>同步是<strong>增量的! 增量的! 增量的！</strong>，即使<code>-R</code>在目标文件夹内创建文件夹也不会将已存在的同名文件夹内容清除</p></blockquote><p><strong>options</strong></p><ul><li><p><code>-r</code> 此选项告诉rsync以递归模式拷贝目录。</p><p>  不带r只能同步文件，如果不带r 同步目录则不会干活，提示<code>skipping directory .</code></p></li></ul><p><strong>eg</strong></p><blockquote><p>带和不带尾<code>/</code>是有区别的。 </p></blockquote><p><code>rsync -r ./from ./to</code> //这样写会把from 同步到to, to会生成一个from<br><code>rsync -r ./from/ ./to</code> //这样写会把from里的所有(file,directory)同步到to</p><p><strong>options</strong></p><ul><li><code>-R</code> 表示需要将源路径上的目录创建在目标文件夹内（所建文件夹的所有下级都会被增量复制)</li></ul><p><strong>eg</strong>  </p><p><code>rsync -R from/abc/a.txt /to</code> 同步a.txt，并创建from,abc文件夹。<br><strong>如果只复制路径的一部分则：用<code>.</code>隔开</strong><br><code>rsync -R from/./abc/a.txt /to</code> 同步a.txt, 并创建abc文件夹。</p><p><strong>options</strong></p><ul><li><p><code>--backup</code> 对目标文件夹内的<strong>相同的文件</strong>做备份</p><p>  备份默认使用<code>~</code>,可以使用<code>--suffix &lt;symbol&gt;</code><br>  <code>rsync -ri --backup --suffix=% from/ to</code><br>  也可以指定备份的路径，但路径必须存在.<code>--backup-dir=./to_back</code></p></li></ul><h4 id="不同主机同步"><a href="#不同主机同步" class="headerlink" title="不同主机同步"></a><strong>不同主机同步</strong></h4><p><strong>options</strong></p><ul><li><p><code>-e</code>指定所要使用的远程shell程序，默认为ssh</p><p>  <code>rsync -ir -e &quot;ssh -p 1080&quot; from/static t.z@138.128.197.152:~/static</code><br>  注意: 我的web root 是<code>/home/www/static</code>，但t.z没有w权限，所以先暂存到有权限的<code>~</code>下，然后在通过<code>sudo rsync -ri ~/static/ /home/www/static</code></p></li></ul><p><strong>options</strong></p><ul><li><code>--existing</code> 只更新目标端已存在的文件</li><li><code>--ignore-existing</code> 只更新目标端不存在的文件</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;rsync&quot;&gt;&lt;a href=&quot;#rsync&quot; class=&quot;headerlink&quot; title=&quot;rsync&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.samba.org/ftp/rsync/rsync.html&quot;&gt;rsync&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="rsync" scheme="1824437.github.io/tags/rsync/"/>
     
   </entry>
   
