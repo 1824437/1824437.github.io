@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-11-01T02:57:43.537Z</updated>
+  <updated>2019-11-15T06:38:44.725Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人简历</title>
+    <link href="1824437.github.io/zt/resume/"/>
+    <id>1824437.github.io/zt/resume/</id>
+    <published>2019-11-15T06:09:57.163Z</published>
+    <updated>2019-11-15T06:38:44.725Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="./2018.jpg" alt=""></p><p><strong>姓名：</strong> 朱涛</p><p><strong>性别：</strong>男    </p><p><strong>出生年月：</strong>1982年7月3日</p><p><strong>手机、微信：</strong>18627152795 </p><p><strong>邮箱：</strong><a href="mailto:zhutao@live.cn">zhutao@live.cn</a></p><p><strong>学历：</strong>大专（人民大学继教学院两年工商管理兼修web前端工程师）</p><table><thead><tr><th align="left"></th><th align="center"></th></tr></thead><tbody><tr><td align="left">期望工作地区</td><td align="center">深圳，东莞，广州，武汉</td></tr><tr><td align="left">目前状况</td><td align="center">离职，可立即上岗</td></tr><tr><td align="left">期望工作性质</td><td align="center">全职</td></tr><tr><td align="left">期望从事职业</td><td align="center">WEB前端开发、前端开发leader</td></tr><tr><td align="left">期望从事行业</td><td align="center">互联网/电子商务、计算机软件、旅游/度假等</td></tr></tbody></table><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>在众多项目中，基本上以后台管理项目为主，PC端业务为主。</p><p>责任心强，喜欢扁平管理模式，不介意非常规加班。</p><p>擅于捕捉需求细节，喜欢先彻底搞清业务再动手，业务代码经验丰富，擅长预判让代码扩展性更强，降低重构成本。欣赏谋求以产品为中心的最佳思路来解决问题。</p><h2 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h2><p>熟悉web前端底层规范，如HTML5，CSS3，Javascript（ES5、ES6、ES7、ES8）规范；</p><p>了解Typescript语法（未实战，最近完成了官方文档的学习）。</p><p>熟悉web各类API及兼容性； 对流行的模块化、组件化编码模式非常熟悉；</p><p>熟悉流行的MVVM框架Vue.js，Vue+Vuex+vueRouter；</p><p>学习过SASS，ReactJS，React Native语法（无项目经验）； </p><p>在review需求，BUG排除，优化业务方案、代码规范有丰富的经验。 </p><p>熟悉打包工具 webpack；熟悉各类前端辅助工具nginx（代理），git（版本控制）<br>熟悉大前端开发Node.js + express + handlebars </p><p>喜欢mac下开发（Linux，bash）</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><p>2018年从去那儿网离职以后，在武汉K2软件工作了几个月之后离职，之后一直没有工作，期间自学了Typescript语法，ReactNative的API，uni-app等前端相关的一些东西。</p><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07  北京趣拿软件科技有限公司</td>    </tr>    <tr>        <td colspan=2 >前端开发工程师|15000-25000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>在旅游度假事业部担任高级前端工程师，负责旅游度假频道产品相关维护。</p><p>1. TTS后台管理系统（产品管理）；</p><p>2. PC端旅游产品展示下单；</p><p>3. 广告模版维护 </p><p>4. b2b系统维护（Node.js） </p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2012.04-2014.02  北京优捷信达信息科技有限公司(优捷信达) </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|8001-10000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>舆论监测系统PC界面的维护。</p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2010.05-2012.02  事天讯通（北京）信息技术有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月 </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责全国门诊预约挂号系统www.guahaoe.com (现为www.guahao.com) PC端界面维护。</p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2009.05-2010.02  北京保盛航空服务有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月  </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责分销系统二期（baosheng.360pkg.com）的前端重构。 </p>        </td>    </tr></table><h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><table>    <tr>        <td colspan=2 >2014.04-2018.07 TTS系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（TTS）后台系统维护。 整个系统PC端界面维护。  </p><p>主要技术栈 原生javascript、Jquery、VUE、Avalon。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07 旅游度产品产品的展示与下单系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（度假、保险、签证）在PC上的展示、下单。</p><p> dujia.qunar.com</p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07 b2b分销系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>b2b分销。 前端原生 大前端Node.js 、Express、handlebars </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求、排期开发。包括大前端的开发。 </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2012.04-2013.03 舆情监测系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>一套单页系统，原生JS单页框架。主要是舆情数据的展示及相关功能。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>维护这套js的正常运营、需求的实现。  </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2010.05-2012.02 全国门诊预约挂号系统（挂号E） </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>全国近150家医院在线预约挂号。www.guahaoe.com。</p><p>主要是医院、医生、号源的展示，预约挂号、防号贩子。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>二期前端重构。  </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2009.05-2010.02 机票分销系统  </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>机票分销功能的实现及中航信黑屏功能的转换。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>界面的设计、制作、交互的实现  </td>    </tr></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;./2018.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;姓名：&lt;/strong&gt; 朱涛&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;性别：&lt;/strong&gt;男    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;出生年月：&lt;/strong&gt;1982年7月3日&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>flex</title>
@@ -191,17 +217,30 @@
   </entry>
   
   <entry>
-    <title>web/css/css3</title>
+    <title>css3偏知识</title>
     <link href="1824437.github.io/web/css/css3/"/>
     <id>1824437.github.io/web/css/css3/</id>
     <published>2019-10-27T10:47:26.133Z</published>
-    <updated>2019-11-01T02:58:51.879Z</updated>
+    <updated>2019-11-01T06:32:20.470Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基线-baseline"><a href="#基线-baseline" class="headerlink" title="基线,baseline"></a>基线,baseline</h2><p><a href="https://blog.csdn.net/hyb1234hi/article/details/88172331">学习资料:https://blog.csdn.net/hyb1234hi/article/details/88172331</a></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;基线-baseline&quot;&gt;&lt;a href=&quot;#基线-baseline&quot; class=&quot;headerlink&quot; title=&quot;基线,baseline&quot;&gt;&lt;/a&gt;基线,baseline&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/hyb
+      
     
     </summary>
     
     
+      <category term="web" scheme="1824437.github.io/categories/web/"/>
+    
+    
+      <category term="baseline" scheme="1824437.github.io/tags/baseline/"/>
+    
+      <category term="vertical-align" scheme="1824437.github.io/tags/vertical-align/"/>
     
   </entry>
   
@@ -345,9 +384,9 @@
       <category term="web" scheme="1824437.github.io/categories/web/"/>
     
     
-      <category term="css" scheme="1824437.github.io/tags/css/"/>
-    
       <category term="sass" scheme="1824437.github.io/tags/sass/"/>
+    
+      <category term="css" scheme="1824437.github.io/tags/css/"/>
     
   </entry>
   
@@ -490,34 +529,6 @@
   
   <entry>
     <title>CentOS学习</title>
-    <link href="1824437.github.io/os/mac/"/>
-    <id>1824437.github.io/os/mac/</id>
-    <published>2019-05-09T01:19:58.489Z</published>
-    <updated>2019-10-30T00:16:52.711Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p><a href="https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html">https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html</a></p><ul><li><p>~/Applications </p><p>  包含一些只有当前用户可以使用的程序，比如我们安装了一个程序，安装时选Applications，应用程序将会默认安装到这里！</p></li><li><p>~/Documents 文稿</p></li><li><p>~/cert</p></li><li><p>~/etc</p></li><li><p>~/Libary 包括应用程序设置、预置及其它用户指定的系统资源或设置。</p></li><li><p>~/Public 你可以把需要与其它用户共享的文件放在这个目录中，默认状态下，这个目录可以被其它所有用户访问。</p></li><li><p>~/Desktop 桌面</p></li></ul><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>/etc/profile #全局配置，登录时默认读取（all users）<br>/etc/paths # 全局配置，登录时默认读取（all users）<br>/etc/bashrc #全局配置，bash shell执行时会读取（all users ）<br><del>/.bash_profile #当前用户配置，存在此文件则忽略</del>/.bash_login,<del>/.bashrc，通常该配置文件还会配置成去读取</del>/.bashrc。<br><del>/.bash_login #当login的方式执行时，并且无</del>/.bash_profile时，读取此文件<br><del>/.profile #若</del>/.bash_profile,~/.bash_login都不存在讲，读取此文件；<br>~/.bashrc #以non-login执行时，会执行此文件<br>~/.bash_logout #退出bash时，执行此文件  </p><h3 id="安装app影响的目录"><a href="#安装app影响的目录" class="headerlink" title="安装app影响的目录"></a>安装app影响的目录</h3><p>~/Library</p><p>~/Library/Application Support</p><p>~/Library/Application Support/CrashReporter</p><p>~/Library/Caches</p><p>~/Library/Containers</p><p>~/Library/LaunchAgents</p><p>~/Library/Preferences</p><p>~/Library/PreferencePanes</p><p>/Library<br>/Library/Application Support<br>/Library/Extensions<br>/Library/LaunchAgents<br>/Library/LaunchDaemons<br>/Library/PreferencePanes<br>/Library/Preferences  </p><p>一般来说/etc下一般是系统全局性的公共文件目录，而/usr/local/etc下一般指代用户级的公共文件目录。</p><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><ol><li><p>osx默认应用程序来源于store或store及信任的开发者，如需”所有来源”选项，则停用Gatekeeper。<br> <code>sudo spctl --master-disable</code><br> <code>sudo spctl --master-enable</code></p></li><li><p><code>sudo killall -HUP mDNSResponder</code> </p></li></ol><h3 id="LF-CRLF"><a href="#LF-CRLF" class="headerlink" title="LF, CRLF"></a>LF, CRLF</h3><p>##系统异常</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</span><br><span class="line">Error: Failure while executing: git config --local --replace-all homebrew.private true</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决方法：</span><br><span class="line">终端执行sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer命令，然后再输入一次系统的密码，完成。</span><br></pre></td></tr></table></figure><p>-</p><ol><li><p>安装iterm2</p><ul><li><a href="http://www.iterm2.com下载安装">www.iterm2.com下载安装</a></li><li><a href="http://iterm2colorschemes.com/">http://iterm2colorschemes.com/</a> 下载配色并导入。</li></ul></li><li><p>安装nvm</p><ul><li><a href="https://github.com/creationix/nvm下载安装">https://github.com/creationix/nvm下载安装</a></li><li>创建~/.bashrc文件(如果没有的话)</li><li>或直接<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</code></li><li>source ~/.bashrc</li></ul></li><li><p>用nvm安装nodejs</p><p> 每个版本下都得重新装一遍nodejs应用。</p></li><li><p>安装brew</p><p> <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code><br> 会自动装上command line tools for xcode</p></li><li><p>安装git</p><p> <code>brew install git</code></p></li><li><p>finder显示所有文件夹</p><p> <code>defaults write com.apple.finder AppleShowAllFiles -bool true;KillAll Finder</code></p></li><li><p>配置git，配色方案，命令行等</p></li></ol><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#load .bashrc</span><br><span class="line"><span class="keyword">if</span> [ -f ~<span class="regexp">/.bashrc ];then</span></span><br><span class="line"><span class="regexp"> . ~/</span>.bashrc</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">#git配置</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-completion.bash #自动补全</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-prompt.sh #分支信息</span><br><span class="line"><span class="keyword">export</span> GIT_PS1_SHOWDIRTYSTATE=<span class="number">1</span></span><br><span class="line">#带分支信息，多色提示符</span><br><span class="line"><span class="keyword">export</span> PS1=<span class="string">'\n\[\033[32m\]\u@\h\[\033[33m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[0m\]\n\$ '</span></span><br><span class="line"></span><br><span class="line">#终端配色方案</span><br><span class="line"><span class="keyword">if</span> brew list | grep coreutils &gt; <span class="regexp">/dev/</span><span class="literal">null</span> ; then</span><br><span class="line">  PATH=<span class="string">"$(brew --prefix coreutils)/libexec/gnubin:$PATH"</span></span><br><span class="line">  alias ls=<span class="string">'ls -F --show-control-chars --color=auto'</span></span><br><span class="line">  <span class="built_in">eval</span> <span class="string">`gdircolors -b $HOME/.dir_colors`</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></code></pre><ol start="8"><li><p>安装beyond compare 4 ,并配置到git </p><ul><li><p><code>rm &quot;/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat&quot;</code> 过期删除此文件</p></li><li><p>配置git</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[diff]</span><br><span class="line"> tool = bc</span><br><span class="line"> [difftool]</span><br><span class="line">     prompt = false</span><br><span class="line"> [difftool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br><span class="line"> [merge]</span><br><span class="line"> tool = bc</span><br><span class="line"> [mergetool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br></pre></td></tr></table></figure></li></ul></li></ol><ol start="8"><li><p>安装 adobe acrobat reader</p></li><li><p>安装 reeder 3 for mac(下载破解)</p></li><li><p>安装 switchhosts</p></li><li><p>安装 charles</p></li><li><p>安装 yarn</p><p><code>brew install yarn --without-node</code><br>如果安装不成功，可能是gz包下载失败(资源被重定向了)，解决:</p><ul><li><code>brew --cache</code>查看cache目录</li><li>手动下载定向后的包放在这个文件夹。</li><li>brew安装时会去cache里面找包名，找到后直接安装。</li></ul></li><li><p>安装 nginx <code>brew install nginx</code></p></li><li><p>安装工程环境（node)</p><ul><li>ykit</li></ul></li></ol><ol><li>aria2</li><li>alfred</li></ol><h3 id="install-shadowsocks-client"><a href="#install-shadowsocks-client" class="headerlink" title="install shadowsocks client"></a>install shadowsocks client</h3><p>-</p><p>which aria2c 可以看到可执行文件在哪个目录  </p><p>ls -la /usr/local/bin/aria2c 可以看到软连接指向哪个目录</p><p>brew 安装的软件都在/usr/local/Cellar 这个目录下</p><p>-</p><h2 id="mac-命令"><a href="#mac-命令" class="headerlink" title="mac 命令"></a>mac 命令</h2><ul><li><p><code>networksetup -listallhardwareports</code>    列出所有接口</p></li><li><p>open . #打开当前目录的finder</p><p> <code>open -a &lt;app&gt; &lt;filename&gt;</code>    用某程序打开某文件</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://jingyan.baidu.com/article/20095761ce2b4fcb062
-      
-    
-    </summary>
-    
-    
-      <category term="os" scheme="1824437.github.io/categories/os/"/>
-    
-    
-      <category term="Mac" scheme="1824437.github.io/tags/Mac/"/>
-    
-      <category term="OSX" scheme="1824437.github.io/tags/OSX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS学习</title>
     <link href="1824437.github.io/os/mac%E5%88%B6linux%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
     <id>1824437.github.io/os/mac制linux启动盘/</id>
     <published>2019-05-09T01:19:58.489Z</published>
@@ -576,6 +587,34 @@
       <category term="linux" scheme="1824437.github.io/tags/linux/"/>
     
       <category term="shell" scheme="1824437.github.io/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/mac/"/>
+    <id>1824437.github.io/os/mac/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:16:52.711Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p><a href="https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html">https://jingyan.baidu.com/article/20095761ce2b4fcb0621b453.html</a></p><ul><li><p>~/Applications </p><p>  包含一些只有当前用户可以使用的程序，比如我们安装了一个程序，安装时选Applications，应用程序将会默认安装到这里！</p></li><li><p>~/Documents 文稿</p></li><li><p>~/cert</p></li><li><p>~/etc</p></li><li><p>~/Libary 包括应用程序设置、预置及其它用户指定的系统资源或设置。</p></li><li><p>~/Public 你可以把需要与其它用户共享的文件放在这个目录中，默认状态下，这个目录可以被其它所有用户访问。</p></li><li><p>~/Desktop 桌面</p></li></ul><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>/etc/profile #全局配置，登录时默认读取（all users）<br>/etc/paths # 全局配置，登录时默认读取（all users）<br>/etc/bashrc #全局配置，bash shell执行时会读取（all users ）<br><del>/.bash_profile #当前用户配置，存在此文件则忽略</del>/.bash_login,<del>/.bashrc，通常该配置文件还会配置成去读取</del>/.bashrc。<br><del>/.bash_login #当login的方式执行时，并且无</del>/.bash_profile时，读取此文件<br><del>/.profile #若</del>/.bash_profile,~/.bash_login都不存在讲，读取此文件；<br>~/.bashrc #以non-login执行时，会执行此文件<br>~/.bash_logout #退出bash时，执行此文件  </p><h3 id="安装app影响的目录"><a href="#安装app影响的目录" class="headerlink" title="安装app影响的目录"></a>安装app影响的目录</h3><p>~/Library</p><p>~/Library/Application Support</p><p>~/Library/Application Support/CrashReporter</p><p>~/Library/Caches</p><p>~/Library/Containers</p><p>~/Library/LaunchAgents</p><p>~/Library/Preferences</p><p>~/Library/PreferencePanes</p><p>/Library<br>/Library/Application Support<br>/Library/Extensions<br>/Library/LaunchAgents<br>/Library/LaunchDaemons<br>/Library/PreferencePanes<br>/Library/Preferences  </p><p>一般来说/etc下一般是系统全局性的公共文件目录，而/usr/local/etc下一般指代用户级的公共文件目录。</p><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><ol><li><p>osx默认应用程序来源于store或store及信任的开发者，如需”所有来源”选项，则停用Gatekeeper。<br> <code>sudo spctl --master-disable</code><br> <code>sudo spctl --master-enable</code></p></li><li><p><code>sudo killall -HUP mDNSResponder</code> </p></li></ol><h3 id="LF-CRLF"><a href="#LF-CRLF" class="headerlink" title="LF, CRLF"></a>LF, CRLF</h3><p>##系统异常</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</span><br><span class="line">Error: Failure while executing: git config --local --replace-all homebrew.private true</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">解决方法：</span><br><span class="line">终端执行sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer命令，然后再输入一次系统的密码，完成。</span><br></pre></td></tr></table></figure><p>-</p><ol><li><p>安装iterm2</p><ul><li><a href="http://www.iterm2.com下载安装">www.iterm2.com下载安装</a></li><li><a href="http://iterm2colorschemes.com/">http://iterm2colorschemes.com/</a> 下载配色并导入。</li></ul></li><li><p>安装nvm</p><ul><li><a href="https://github.com/creationix/nvm下载安装">https://github.com/creationix/nvm下载安装</a></li><li>创建~/.bashrc文件(如果没有的话)</li><li>或直接<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</code></li><li>source ~/.bashrc</li></ul></li><li><p>用nvm安装nodejs</p><p> 每个版本下都得重新装一遍nodejs应用。</p></li><li><p>安装brew</p><p> <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code><br> 会自动装上command line tools for xcode</p></li><li><p>安装git</p><p> <code>brew install git</code></p></li><li><p>finder显示所有文件夹</p><p> <code>defaults write com.apple.finder AppleShowAllFiles -bool true;KillAll Finder</code></p></li><li><p>配置git，配色方案，命令行等</p></li></ol><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#load .bashrc</span><br><span class="line"><span class="keyword">if</span> [ -f ~<span class="regexp">/.bashrc ];then</span></span><br><span class="line"><span class="regexp"> . ~/</span>.bashrc</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">#git配置</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-completion.bash #自动补全</span><br><span class="line">. /usr/local/Cellar/git/2.16.2/etc/bash_completion.d/git-prompt.sh #分支信息</span><br><span class="line"><span class="keyword">export</span> GIT_PS1_SHOWDIRTYSTATE=<span class="number">1</span></span><br><span class="line">#带分支信息，多色提示符</span><br><span class="line"><span class="keyword">export</span> PS1=<span class="string">'\n\[\033[32m\]\u@\h\[\033[33m\]\w\[\033[36m\]$(__git_ps1 " (%s)")\[\033[0m\]\n\$ '</span></span><br><span class="line"></span><br><span class="line">#终端配色方案</span><br><span class="line"><span class="keyword">if</span> brew list | grep coreutils &gt; <span class="regexp">/dev/</span><span class="literal">null</span> ; then</span><br><span class="line">  PATH=<span class="string">"$(brew --prefix coreutils)/libexec/gnubin:$PATH"</span></span><br><span class="line">  alias ls=<span class="string">'ls -F --show-control-chars --color=auto'</span></span><br><span class="line">  <span class="built_in">eval</span> <span class="string">`gdircolors -b $HOME/.dir_colors`</span></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></code></pre><ol start="8"><li><p>安装beyond compare 4 ,并配置到git </p><ul><li><p><code>rm &quot;/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat&quot;</code> 过期删除此文件</p></li><li><p>配置git</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[diff]</span><br><span class="line"> tool = bc</span><br><span class="line"> [difftool]</span><br><span class="line">     prompt = false</span><br><span class="line"> [difftool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br><span class="line"> [merge]</span><br><span class="line"> tool = bc</span><br><span class="line"> [mergetool &quot;bc&quot;]</span><br><span class="line"> path = /usr/local/bin/bcomp</span><br></pre></td></tr></table></figure></li></ul></li></ol><ol start="8"><li><p>安装 adobe acrobat reader</p></li><li><p>安装 reeder 3 for mac(下载破解)</p></li><li><p>安装 switchhosts</p></li><li><p>安装 charles</p></li><li><p>安装 yarn</p><p><code>brew install yarn --without-node</code><br>如果安装不成功，可能是gz包下载失败(资源被重定向了)，解决:</p><ul><li><code>brew --cache</code>查看cache目录</li><li>手动下载定向后的包放在这个文件夹。</li><li>brew安装时会去cache里面找包名，找到后直接安装。</li></ul></li><li><p>安装 nginx <code>brew install nginx</code></p></li><li><p>安装工程环境（node)</p><ul><li>ykit</li></ul></li></ol><ol><li>aria2</li><li>alfred</li></ol><h3 id="install-shadowsocks-client"><a href="#install-shadowsocks-client" class="headerlink" title="install shadowsocks client"></a>install shadowsocks client</h3><p>-</p><p>which aria2c 可以看到可执行文件在哪个目录  </p><p>ls -la /usr/local/bin/aria2c 可以看到软连接指向哪个目录</p><p>brew 安装的软件都在/usr/local/Cellar 这个目录下</p><p>-</p><h2 id="mac-命令"><a href="#mac-命令" class="headerlink" title="mac 命令"></a>mac 命令</h2><ul><li><p><code>networksetup -listallhardwareports</code>    列出所有接口</p></li><li><p>open . #打开当前目录的finder</p><p> <code>open -a &lt;app&gt; &lt;filename&gt;</code>    用某程序打开某文件</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;目录结构&quot;&gt;&lt;a href=&quot;#目录结构&quot; class=&quot;headerlink&quot; title=&quot;目录结构&quot;&gt;&lt;/a&gt;目录结构&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://jingyan.baidu.com/article/20095761ce2b4fcb062
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="Mac" scheme="1824437.github.io/tags/Mac/"/>
+    
+      <category term="OSX" scheme="1824437.github.io/tags/OSX/"/>
     
   </entry>
   
