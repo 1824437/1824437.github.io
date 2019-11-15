@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="1824437.github.io/"/>
-  <updated>2019-11-15T06:54:45.156Z</updated>
+  <updated>2019-11-15T06:57:51.533Z</updated>
   <id>1824437.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="1824437.github.io/zt/resume/"/>
     <id>1824437.github.io/zt/resume/</id>
     <published>2019-11-15T06:09:57.163Z</published>
-    <updated>2019-11-15T06:54:45.156Z</updated>
+    <updated>2019-11-15T06:57:51.533Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/2018.jpg" alt=""></p><p><strong>姓名：</strong> 朱涛</p><p><strong>性别：</strong>男    </p><p><strong>出生年月：</strong>1982年7月3日</p><p><strong>手机、微信：</strong>18627152795 </p><p><strong>邮箱：</strong><a href="mailto:zhutao@live.cn">zhutao@live.cn</a></p><p><strong>学历：</strong>大专（人民大学继教学院两年工商管理兼修web前端工程师）</p><table><thead><tr><th align="left"></th><th align="center"></th></tr></thead><tbody><tr><td align="left">期望工作地区</td><td align="center">深圳，东莞，广州，武汉</td></tr><tr><td align="left">目前状况</td><td align="center">离职，可立即上岗</td></tr><tr><td align="left">期望工作性质</td><td align="center">全职</td></tr><tr><td align="left">期望从事职业</td><td align="center">WEB前端开发、前端开发leader</td></tr><tr><td align="left">期望从事行业</td><td align="center">互联网/电子商务、计算机软件、旅游/度假等</td></tr></tbody></table><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>在众多项目中，基本上以后台管理项目为主，PC端业务为主。</p><p>责任心强，喜欢扁平管理模式，不介意非常规加班。</p><p>擅于捕捉需求细节，喜欢先彻底搞清业务再动手，业务代码经验丰富，擅长预判让代码扩展性更强，降低重构成本。欣赏谋求以产品为中心的最佳思路来解决问题。</p><h2 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h2><p>熟悉web前端底层规范，如HTML5，CSS3，Javascript（ES5、ES6、ES7、ES8）规范；</p><p>了解Typescript语法（未实战，最近完成了官方文档的学习）。</p><p>熟悉web各类API及兼容性； 对流行的模块化、组件化编码模式非常熟悉；</p><p>熟悉非开源框架下的老项目工程，如jquery，模版混合原生代码；</p><p>熟悉流行的MVVM框架Vue.js，Vue+Vuex+vueRouter；</p><p>学习过SASS，ReactJS，React Native语法（无项目经验）； </p><p>在review需求，BUG排除，优化业务方案、代码规范有丰富的经验。 </p><p>熟悉打包工具 webpack；熟悉各类前端辅助工具nginx（代理），git（版本控制）<br>熟悉大前端开发Node.js + express + handlebars </p><p>喜欢mac下开发（Linux，bash）</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><p>2018年从去那儿网离职以后，在武汉K2软件工作了几个月之后离职，之后一直没有工作，期间自学了Typescript语法，ReactNative的API，uni-app等前端相关的一些东西。</p><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07  北京趣拿软件科技有限公司</td>    </tr>    <tr>        <td colspan=2 >前端开发工程师|15000-25000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>在旅游度假事业部担任高级前端工程师，负责旅游度假频道产品相关维护。</p><p>1. TTS后台管理系统（产品管理）；</p><p>2. PC端旅游产品展示下单；</p><p>3. 广告模版维护 </p><p>4. b2b系统维护（Node.js） </p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2012.04-2014.02  北京优捷信达信息科技有限公司(优捷信达) </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|8001-10000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>舆论监测系统PC界面的维护。</p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2010.05-2012.02  事天讯通（北京）信息技术有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月 </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责全国门诊预约挂号系统www.guahaoe.com (现为www.guahao.com) PC端界面维护。</p>        </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2009.05-2010.02  北京保盛航空服务有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月  </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责分销系统二期（baosheng.360pkg.com）的前端重构。 </p>        </td>    </tr></table><h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><table>    <tr>        <td colspan=2 >2014.04-2018.07 TTS系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（TTS）后台系统维护。 整个系统PC端界面维护。  </p><p>主要技术栈 原生javascript、Jquery、VUE、Avalon。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07 旅游度产品产品的展示与下单系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（度假、保险、签证）在PC上的展示、下单。</p><p> dujia.qunar.com</p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07 b2b分销系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>b2b分销。 前端原生 大前端Node.js 、Express、handlebars </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求、排期开发。包括大前端的开发。 </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2012.04-2013.03 舆情监测系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>一套单页系统，原生JS单页框架。主要是舆情数据的展示及相关功能。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>维护这套js的正常运营、需求的实现。  </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2010.05-2012.02 全国门诊预约挂号系统（挂号E） </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>全国近150家医院在线预约挂号。www.guahaoe.com。</p><p>主要是医院、医生、号源的展示，预约挂号、防号贩子。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>二期前端重构。  </td>    </tr></table><p>-</p><table>    <tr>        <td colspan=2 >2009.05-2010.02 机票分销系统  </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>机票分销功能的实现及中航信黑屏功能的转换。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>界面的设计、制作、交互的实现  </td>    </tr></table>]]></content>
+    <content type="html"><![CDATA[<p><img src="/images/2018.jpg" alt=""></p><p><strong>姓名：</strong> 朱涛</p><p><strong>性别：</strong>男    </p><p><strong>出生年月：</strong>1982年7月3日</p><p><strong>手机、微信：</strong>18627152795 </p><p><strong>邮箱：</strong><a href="mailto:zhutao@live.cn">zhutao@live.cn</a></p><p><strong>学历：</strong>大专（人民大学继教学院两年工商管理兼修web前端工程师）</p><table><thead><tr><th align="left"></th><th align="center"></th></tr></thead><tbody><tr><td align="left">期望工作地区</td><td align="center">深圳，东莞，广州，武汉</td></tr><tr><td align="left">目前状况</td><td align="center">离职，可立即上岗</td></tr><tr><td align="left">期望工作性质</td><td align="center">全职</td></tr><tr><td align="left">期望从事职业</td><td align="center">WEB前端开发、前端开发leader</td></tr><tr><td align="left">期望从事行业</td><td align="center">互联网/电子商务、计算机软件、旅游/度假等</td></tr></tbody></table><h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><p>在众多项目中，基本上以后台管理项目为主，PC端业务为主。</p><p>责任心强，喜欢扁平管理模式，不介意非常规加班。</p><p>擅于捕捉需求细节，喜欢先彻底搞清业务再动手，业务代码经验丰富，擅长预判让代码扩展性更强，降低重构成本。欣赏谋求以产品为中心的最佳思路来解决问题。</p><h2 id="专业技能"><a href="#专业技能" class="headerlink" title="专业技能"></a>专业技能</h2><p>熟悉web前端底层规范，如HTML5，CSS3，Javascript（ES5、ES6、ES7、ES8）规范；</p><p>了解Typescript语法（未实战，最近完成了官方文档的学习）。</p><p>熟悉web各类API及兼容性； 对流行的模块化、组件化编码模式非常熟悉；</p><p>熟悉非开源框架下的老项目工程，如jquery，模版混合原生代码；</p><p>熟悉流行的MVVM框架Vue.js，Vue+Vuex+vueRouter；</p><p>学习过SASS，ReactJS，React Native语法（无项目经验）； </p><p>在review需求，BUG排除，优化业务方案、代码规范有丰富的经验。 </p><p>熟悉打包工具 webpack；熟悉各类前端辅助工具nginx（代理），git（版本控制）<br>熟悉大前端开发Node.js + express + handlebars </p><p>喜欢mac下开发（Linux，bash）</p><h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><p>2018年从去那儿网离职以后，在武汉K2软件工作了几个月之后离职，之后一直没有工作，期间自学了Typescript语法，ReactNative的API，uni-app等前端相关的一些东西。</p><p>-</p><table>    <tr>        <td colspan=2 >2014.04-2018.07  北京趣拿软件科技有限公司</td>    </tr>    <tr>        <td colspan=2 >前端开发工程师|15000-25000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>在旅游度假事业部担任高级前端工程师，负责旅游度假频道产品相关维护。</p><p>1. TTS后台管理系统（产品管理）；</p><p>2. PC端旅游产品展示下单；</p><p>3. 广告模版维护 </p><p>4. b2b系统维护（Node.js） </p>        </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2012.04-2014.02  北京优捷信达信息科技有限公司(优捷信达) </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|8001-10000元/月</td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>舆论监测系统PC界面的维护。</p>        </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2010.05-2012.02  事天讯通（北京）信息技术有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月 </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责全国门诊预约挂号系统www.guahaoe.com (现为www.guahao.com) PC端界面维护。</p>        </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2009.05-2010.02  北京保盛航空服务有限公司 </td>    </tr>    <tr>        <td colspan=2 >web前端工程师|6001-8000元/月  </td>    </tr>    <tr>        <td>工作描述</td>        <td>            <p>负责分销系统二期（baosheng.360pkg.com）的前端重构。 </p>        </td>    </tr></table><h3 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h3><table>    <tr>        <td colspan=2 >2014.04-2018.07 TTS系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（TTS）后台系统维护。 整个系统PC端界面维护。  </p><p>主要技术栈 原生javascript、Jquery、VUE、Avalon。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2014.04-2018.07 旅游度产品产品的展示与下单系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>旅游度假产品（度假、保险、签证）在PC上的展示、下单。</p><p> dujia.qunar.com</p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求，排期，代码实现，上线。</td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2014.04-2018.07 b2b分销系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>b2b分销。 前端原生 大前端Node.js 、Express、handlebars </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>review需求、排期开发。包括大前端的开发。 </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2012.04-2013.03 舆情监测系统</td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>一套单页系统，原生JS单页框架。主要是舆情数据的展示及相关功能。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>维护这套js的正常运营、需求的实现。  </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2010.05-2012.02 全国门诊预约挂号系统（挂号E） </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>全国近150家医院在线预约挂号。www.guahaoe.com。</p><p>主要是医院、医生、号源的展示，预约挂号、防号贩子。 </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>二期前端重构。  </td>    </tr></table><hr><table>    <tr>        <td colspan=2 >2009.05-2010.02 机票分销系统  </td>    </tr>    <tr>        <td>项目描述</td>        <td>            <p>机票分销功能的实现及中航信黑屏功能的转换。  </p>        </td>    </tr>    <tr>        <td>个人职责</td>        <td>界面的设计、制作、交互的实现  </td>    </tr></table>]]></content>
     
     <summary type="html">
     
@@ -383,9 +383,9 @@
       <category term="web" scheme="1824437.github.io/categories/web/"/>
     
     
-      <category term="sass" scheme="1824437.github.io/tags/sass/"/>
-    
       <category term="css" scheme="1824437.github.io/tags/css/"/>
+    
+      <category term="sass" scheme="1824437.github.io/tags/sass/"/>
     
   </entry>
   
@@ -556,37 +556,6 @@
   
   <entry>
     <title>CentOS学习</title>
-    <link href="1824437.github.io/os/mac%E5%88%B6linux%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
-    <id>1824437.github.io/os/mac制linux启动盘/</id>
-    <published>2019-05-09T01:19:58.489Z</published>
-    <updated>2019-10-30T00:18:04.181Z</updated>
-    
-    <content type="html"><![CDATA[<p>在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。</p><p>步骤如下：</p><p>1、在终端下，将ISO镜像转换为DMG格式：</p><p><code>$ hdiutil convert -format UDRW -o ~/linux.dmg /tmp/linux.iso</code></p><p>2、插入USB盘，然后在终端下，查找该盘的设备名：</p><p>$ diskutil list<br>/dev/disk0<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:      GUID_partition_scheme                        *121.3 GB  disk0<br>  1:                        EFI                        209.7 MB  disk0s1<br>  2:                  Apple_HFS Macintosh HD            120.5 GB  disk0s2<br>  3:                Apple_Boot Recovery HD            650.0 MB  disk0s3<br>/dev/disk1<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:    FDisk_partition_scheme                        *15.8 GB    disk1<br>  1:              Windows_NTFS wxy-u3                  15.8 GB    disk1s1</p><p>以上显示该盘的设备名是： /dev/disk1</p><p>也可以通过“磁盘工具”里面选择磁盘（不是分区），来查看其信息，获得设备名。</p><p>3、卸载USB盘（插入时已经自动挂载了），但是不要推出。在终端下：</p><p>$ diskutil umountDisk /dev/disk1<br>Unmount of all volumes on disk1 was successful</p><p>也可以通过“磁盘工具”进行卸载。</p><p>4、镜像上面生成的DMG内容到USB盘，在终端下：</p><p>$ sudo dd if=linux.dmg of=/dev/rdisk1 bs=1m<br>Password:<br>2151+1 records in<br>2151+1 records out<br>2256076800 bytes transferred in 90.277905 secs (24990354 bytes/sec)</p><p>此处要千万注意，指定的of别写错了，否则悔之晚矣。另外，of参数指定的设备名，可以用上面找到的/dev/disk1，也可以用/dev/rdisk1，此处的“r”据说会写入较快。</p><p>另外，如果报错：“dd: Invalid number `1m’”，可能是使用的不同版本的dd，可以换为bs=1M试试。</p><p>如果报错：“dd: /dev/diskN: Resource busy”，可能是上面的步骤中没有完成卸载USB盘。</p><p>5、推出USB盘。在上面复制之后，系统可能会报错，“此电脑不难读取能插入的磁盘”，不必理会，直接推出即可。也可以在终端下推出：</p><p>$ diskutil eject /dev/disk1</p><p>或者在“磁盘工具”里面推出。</p><p>使用该USB盘引导启动即可进行Linux的安装。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。&lt;/p&gt;
-&lt;p&gt;步骤如下：&lt;/p&gt;
-&lt;p&gt;1、在终端下，将ISO镜像转换为DMG格式：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;$ hdiutil convert -f
-      
-    
-    </summary>
-    
-    
-      <category term="os" scheme="1824437.github.io/categories/os/"/>
-    
-    
-      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
-    
-      <category term="启动盘" scheme="1824437.github.io/tags/%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS学习</title>
     <link href="1824437.github.io/os/shell_command/"/>
     <id>1824437.github.io/os/shell_command/</id>
     <published>2019-05-09T01:19:58.489Z</published>
@@ -614,6 +583,37 @@
       <category term="linux" scheme="1824437.github.io/tags/linux/"/>
     
       <category term="shell" scheme="1824437.github.io/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS学习</title>
+    <link href="1824437.github.io/os/mac%E5%88%B6linux%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
+    <id>1824437.github.io/os/mac制linux启动盘/</id>
+    <published>2019-05-09T01:19:58.489Z</published>
+    <updated>2019-10-30T00:18:04.181Z</updated>
+    
+    <content type="html"><![CDATA[<p>在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。</p><p>步骤如下：</p><p>1、在终端下，将ISO镜像转换为DMG格式：</p><p><code>$ hdiutil convert -format UDRW -o ~/linux.dmg /tmp/linux.iso</code></p><p>2、插入USB盘，然后在终端下，查找该盘的设备名：</p><p>$ diskutil list<br>/dev/disk0<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:      GUID_partition_scheme                        *121.3 GB  disk0<br>  1:                        EFI                        209.7 MB  disk0s1<br>  2:                  Apple_HFS Macintosh HD            120.5 GB  disk0s2<br>  3:                Apple_Boot Recovery HD            650.0 MB  disk0s3<br>/dev/disk1<br>  #:                      TYPE NAME                    SIZE      IDENTIFIER<br>  0:    FDisk_partition_scheme                        *15.8 GB    disk1<br>  1:              Windows_NTFS wxy-u3                  15.8 GB    disk1s1</p><p>以上显示该盘的设备名是： /dev/disk1</p><p>也可以通过“磁盘工具”里面选择磁盘（不是分区），来查看其信息，获得设备名。</p><p>3、卸载USB盘（插入时已经自动挂载了），但是不要推出。在终端下：</p><p>$ diskutil umountDisk /dev/disk1<br>Unmount of all volumes on disk1 was successful</p><p>也可以通过“磁盘工具”进行卸载。</p><p>4、镜像上面生成的DMG内容到USB盘，在终端下：</p><p>$ sudo dd if=linux.dmg of=/dev/rdisk1 bs=1m<br>Password:<br>2151+1 records in<br>2151+1 records out<br>2256076800 bytes transferred in 90.277905 secs (24990354 bytes/sec)</p><p>此处要千万注意，指定的of别写错了，否则悔之晚矣。另外，of参数指定的设备名，可以用上面找到的/dev/disk1，也可以用/dev/rdisk1，此处的“r”据说会写入较快。</p><p>另外，如果报错：“dd: Invalid number `1m’”，可能是使用的不同版本的dd，可以换为bs=1M试试。</p><p>如果报错：“dd: /dev/diskN: Resource busy”，可能是上面的步骤中没有完成卸载USB盘。</p><p>5、推出USB盘。在上面复制之后，系统可能会报错，“此电脑不难读取能插入的磁盘”，不必理会，直接推出即可。也可以在终端下推出：</p><p>$ diskutil eject /dev/disk1</p><p>或者在“磁盘工具”里面推出。</p><p>使用该USB盘引导启动即可进行Linux的安装。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在Mac环境下，将Linux的ISO镜像生成一个Linux的安装盘，和Linux下差不多，只是Mac下有一些自己的工具。&lt;/p&gt;
+&lt;p&gt;步骤如下：&lt;/p&gt;
+&lt;p&gt;1、在终端下，将ISO镜像转换为DMG格式：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ hdiutil convert -f
+      
+    
+    </summary>
+    
+    
+      <category term="os" scheme="1824437.github.io/categories/os/"/>
+    
+    
+      <category term="linux" scheme="1824437.github.io/tags/linux/"/>
+    
+      <category term="启动盘" scheme="1824437.github.io/tags/%E5%90%AF%E5%8A%A8%E7%9B%98/"/>
     
   </entry>
   
